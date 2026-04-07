@@ -1,0 +1,37 @@
+{
+  "domain": "E-Commerce",
+  "intents": [
+    { "id": 1, "name": "track_order", "example": "मेरा ऑर्डर कहाँ है?", "description": "User wants to track the delivery status of an order" },
+    { "id": 2, "name": "cancel_order", "example": "मैं अपना ऑर्डर रद्द करना चाहता हूँ", "description": "User wants to cancel an existing order" },
+    { "id": 3, "name": "return_product", "example": "मुझे यह वापस करना है", "description": "User wants to return a delivered product" },
+    { "id": 4, "name": "refund_status", "example": "मेरा रिफंड कब आएगा?", "description": "User is inquiring about when their refund will be credited" },
+    { "id": 5, "name": "payment_issue", "example": "पेमेंट हो गई पर ऑर्डर नहीं मिला", "description": "Payment was deducted but order was not confirmed" },
+    { "id": 6, "name": "product_availability", "example": "क्या यह साइज़ में मिलता है?", "description": "User is checking if a product or variant is in stock" },
+    { "id": 7, "name": "shipping_cost", "example": "डिलीवरी चार्ज कितना है?", "description": "User is asking about shipping or delivery fees" },
+    { "id": 8, "name": "delivery_time", "example": "कितने दिन में आएगा?", "description": "User is inquiring about the estimated delivery time" },
+    { "id": 9, "name": "change_address", "example": "मैं डिलीवरी एड्रेस बदलना चाहता हूँ", "description": "User wants to update the delivery address for an order" },
+    { "id": 10, "name": "exchange_product", "example": "मुझे दूसरा साइज़ चाहिए", "description": "User wants to exchange a product for a different variant" },
+    { "id": 11, "name": "coupon_apply", "example": "कूपन कोड काम नहीं कर रहा", "description": "User is facing issues applying a discount coupon" },
+    { "id": 12, "name": "account_login", "example": "मेरा अकाउंट लॉक हो गया है", "description": "User is facing issues logging into their account" },
+    { "id": 13, "name": "order_modify", "example": "मैं ऑर्डर में कुछ बदलना चाहता हूँ", "description": "User wants to modify items in their current order" },
+    { "id": 14, "name": "store_hours", "example": "आपका स्टोर कब खुलता है?", "description": "User is asking about physical store operating hours" },
+    { "id": 15, "name": "complaint_register", "example": "मुझे शिकायत दर्ज करनी है", "description": "User wants to register a formal complaint" },
+    { "id": 16, "name": "product_review", "example": "मुझे रिव्यू कैसे देना है?", "description": "User wants to know how to leave a product review" },
+    { "id": 17, "name": "warranty_info", "example": "वारंटी कितने दिन की है?", "description": "User is asking about the warranty period or terms" },
+    { "id": 18, "name": "bulk_order", "example": "मुझे 50 पीस चाहिए", "description": "User is inquiring about placing a bulk or B2B order" },
+    { "id": 19, "name": "gift_wrapping", "example": "गिफ्ट रैपिंग मिलती है?", "description": "User is asking if gift wrapping services are available" },
+    { "id": 20, "name": "human_escalate", "example": "मुझे किसी से बात करनी है", "description": "User wants to talk to a human customer service agent" }
+  ],
+  "entities": [
+    { "name": "order_id", "type": "string", "example": "ORD12345" },
+    { "name": "product_name", "type": "string", "example": "Blue Kurta" },
+    { "name": "product_size", "type": "string", "example": "XL" },
+    { "name": "date", "type": "date", "example": "2023-10-15" },
+    { "name": "phone_number", "type": "string", "example": "9876543210" },
+    { "name": "address", "type": "string", "example": "123 Main St, Mumbai" },
+    { "name": "coupon_code", "type": "string", "example": "FESTIVE50" },
+    { "name": "quantity", "type": "integer", "example": "2" },
+    { "name": "price", "type": "float", "example": "1499.00" },
+    { "name": "account_id", "type": "string", "example": "USR987xyz" }
+  ]
+}

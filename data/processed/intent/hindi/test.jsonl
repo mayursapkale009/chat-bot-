@@ -1,0 +1,800 @@
+{"text": "क्या आप मुझे बता सकते हैं कि डिस्काउंट कोड OFF50 एक त्रुटि दिखा रहा है। धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं विनिमय नीति जानना चाहता हूँ? कृपया।", "intent": "exchange_product", "lang": "hi"}
+{"text": "अत्यावश्यक: एक उपहार संदेश जोड़ें. कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया मेरा रिफंड जमा करें। यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "ORD5857 के लिए शिपमेंट रोकें।", "intent": "cancel_order", "lang": "hi"}
+{"text": "कृपया क्या मैं जूतों पर कूपन लगा सकता हूँ?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "कृपया क्या उपहार के रूप में जूते भेजने का कोई विकल्प है? अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि यह बैग ख़राब है, मुझे रिटर्न चाहिए।", "intent": "return_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि शिपिंग में कितना समय लगता है? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि ऑर्डर ORD1432 से लैपटॉप हटा दें।", "intent": "order_modify", "lang": "hi"}
+{"text": "मुझे ऑर्डर ORD1813 के लिए उपहार पैकेजिंग चाहिए। धन्यवाद।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "नमस्ते, पैसे कट गए लेकिन ऑर्डर नहीं दिया गया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "मैं इस इत्र की समीक्षा कैसे करूँ? धन्यवाद।", "intent": "product_review", "lang": "hi"}
+{"text": "क्या मुझे ऑर्डर ORD4980 के लिए शिपिंग का भुगतान करना होगा? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "साइन इन करने में असमर्थ.", "intent": "account_login", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैंने मोबाइल के लिए भुगतान किया लेकिन पुष्टि नहीं मिली। कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "क्या जूते L आकार में उपलब्ध हैं? कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "मुझे अपने बैग के लिए छोटे आकार की आवश्यकता है। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "प्रोमो कोड OFF15 स्वीकार नहीं किया जाता है. धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या उपहार के रूप में कुर्ता भेजने का कोई विकल्प है? धन्यवाद।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया मुझे वारंटी शर्तों के बारे में बताएं। कृपया।", "intent": "warranty_info", "lang": "hi"}
+{"text": "आप कितने बजे तक खुले हैं? यथाशीघ्र।", "intent": "store_hours", "lang": "hi"}
+{"text": "कृपया मुझे ऑर्डर ORD3965 के लिए उपहार पैकेजिंग चाहिए। धन्यवाद।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "जयपुर में कूरियर के बारे में शिकायत। धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मेरी डिलीवरी पर कोई अपडेट? कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या मेरा लैपटॉप भेज दिया गया है? अब।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: आपके व्यावसायिक घंटे क्या हैं?", "intent": "store_hours", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे उपहार के रूप में इसकी आवश्यकता है। धन्यवाद।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "नमस्ते, जींस फिट नहीं आ रही है, बदलना चाहता हूँ।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि शिपिंग शुल्क बहुत अधिक है। धन्यवाद।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मेरा खाता पुनर्प्राप्त करने में मेरी सहायता करें. कृपया।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, ऑर्डर ORD3648 कब आएगा?", "intent": "track_order", "lang": "hi"}
+{"text": "कृपया मैं अपना कूपन OFF50 लागू करना भूल गया। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "इस साड़ी को बड़ी साड़ी से बदलें।", "intent": "exchange_product", "lang": "hi"}
+{"text": "नमस्ते, मैंने टी-शर्ट के लिए भुगतान किया लेकिन पुष्टि नहीं मिली।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया ऑर्डर ORD7396 के लिए पता अपडेट करें।", "intent": "change_address", "lang": "hi"}
+{"text": "अपेक्षित डिलीवरी कब है? कृपया।", "intent": "delivery_time", "lang": "hi"}
+{"text": "कृपया डिस्काउंट कोड OFF50 एक त्रुटि दिखा रहा है। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे मैनेजर से बात करनी होगी। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: विनिमय नीति? अब।", "intent": "exchange_product", "lang": "hi"}
+{"text": "नमस्ते, मुझे लॉगिन करने के लिए ओटीपी नहीं मिल रहा है। धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं एक्सचेंज के लिए कैसे आवेदन करूं? यथाशीघ्र।", "intent": "exchange_product", "lang": "hi"}
+{"text": "कृपया मुझे सहायक स्टाफ में शामिल करें।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, मुझे ऑर्डर ORD1392 के लिए उपहार पैकेजिंग चाहिए। यथाशीघ्र।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या मुझे ऑर्डर ORD9343 के लिए शिपिंग का भुगतान करना होगा? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं मुझे वापस कॉल करें. धन्यवाद।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, मुझे अभी तक अपना रिफंड नहीं मिला है। कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं उत्पाद समीक्षा कहां लिख सकता हूं?", "intent": "product_review", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे एक औपचारिक शिकायत करनी है। कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "नमस्ते, मुझे मैनेजर से बात करनी है। धन्यवाद।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, मुझे कुर्ता पसंद नहीं आया, वापसी की व्यवस्था करो।", "intent": "return_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि सूरत में शिपिंग का किराया कितना है? कृपया।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "नमस्ते, मैं इस परफ्यूम की समीक्षा कैसे करूँ? अब।", "intent": "product_review", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा लॉगिन विफल हो रहा है। अब।", "intent": "account_login", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे एक एजेंट से जोड़ें। कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि शिपिंग शुल्क बहुत अधिक है। धन्यवाद।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मुझे अपना रिफंड कब मिलेगा? अब।", "intent": "refund_status", "lang": "hi"}
+{"text": "मुझे एक वास्तविक व्यक्ति में स्थानांतरित करें। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, क्या मोबाइल के लिए कोई इकाई बची है?", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या यह आइटम स्टॉक में नहीं है? कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "मेरा कूपन कोड OFF47 काम नहीं कर रहा है। कृपया।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "कृपया मुझे जूते पसंद नहीं हैं, वापसी की व्यवस्था करें। कृपया।", "intent": "return_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि डिलीवरी शुल्क क्या है? कृपया।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि कुर्ते पर कितने महीने की वारंटी है? यथाशीघ्र।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मेरा ऑर्डर कहां है?", "intent": "track_order", "lang": "hi"}
+{"text": "क्या लैपटॉप आकार 8 में उपलब्ध है? अब।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या आप कीमत छिपा सकते हैं? कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया क्या आप जाँच सकते हैं कि मेरा भुगतान हुआ या नहीं? धन्यवाद।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया इसे उपहार में लपेटें। अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं जूतों से बहुत निराश हूं. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "ऑर्डर ORD4453 के लिए मेरा पता बदलें।", "intent": "change_address", "lang": "hi"}
+{"text": "कृपया आप आज कब बंद करेंगे? अब।", "intent": "store_hours", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मोबाइल XL साइज में उपलब्ध है? अब।", "intent": "product_availability", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि इसे लपेटकर अहमदाबाद भेज दें। कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या शिपिंग निःशुल्क है?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या मेरा ऑर्डर डिलीवरी के लिए है?", "intent": "track_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि डिलीवरी का अनुमानित समय क्या है? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या मैं परफ्यूम पर कूपन लगा सकता हूँ?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं ऑर्डर ORD7076 की समीक्षा करना चाहता हूं। धन्यवाद।", "intent": "product_review", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरे ऑर्डर ORD6920 की स्थिति क्या है?", "intent": "track_order", "lang": "hi"}
+{"text": "आप कितनी तेजी से चेन्नई पहुंचा सकते हैं? धन्यवाद।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मैं एक रेटिंग छोड़ना चाहता हूँ.", "intent": "product_review", "lang": "hi"}
+{"text": "मैं यह छूट क्यों लागू नहीं कर सकता? यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं लैपटॉप वापस भेजना चाहता हूं. कृपया।", "intent": "return_product", "lang": "hi"}
+{"text": "इसके बजाय इसे सूरत पहुंचाएं। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "नमस्ते, क्या मैं दो दिन पहले खरीदी गई घड़ी वापस कर सकता हूँ?", "intent": "return_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरा वाउचर काम नहीं कर रहा है। धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैंने 66 का ऑर्डर दिया था लेकिन मुझे और चाहिए। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "कृपया मैं एक शिकायत दर्ज करना चाहता हूँ. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं यह कुर्ता बदलना चाहता हूं। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "नमस्ते, मेरा ऑर्डर कहां है? धन्यवाद।", "intent": "track_order", "lang": "hi"}
+{"text": "कृपया ऐप कहता है कि भुगतान विफल हो गया, लेकिन मेरा बैंक कहता है सफल। यथाशीघ्र।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया प्रोमो कोड का उपयोग कैसे करें? यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरी डिलीवरी पर कोई अपडेट है? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे ऑर्डर ORD1353 के लिए उपहार पैकेजिंग चाहिए। अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया क्या एक्सप्रेस डिलीवरी उपलब्ध है? कृपया।", "intent": "delivery_time", "lang": "hi"}
+{"text": "अत्यावश्यक: थोक मूल्य निर्धारण कैसे प्राप्त करें? धन्यवाद।", "intent": "bulk_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं मेरी शिकायत ले लो. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या यह गारंटी के साथ आता है? धन्यवाद।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मुझे यह कुर्ता चाहिए. क्या यह उपलब्ध है? अब।", "intent": "product_availability", "lang": "hi"}
+{"text": "प्रोमो कोड का किस प्रकार उपयोग करें?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे ग्राहक सेवा से बात करने दीजिए। धन्यवाद।", "intent": "human_escalate", "lang": "hi"}
+{"text": "कृपया क्या टी-शर्ट के लिए कोई यूनिट बची है?", "intent": "product_availability", "lang": "hi"}
+{"text": "मेरा वाउचर काम नहीं कर रहा है. धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मुझे ग्राहक सेवा प्रतिनिधि मिल सकता है?", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या उपहार के रूप में कुर्ता भेजने का कोई विकल्प है?", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं 15 अगस्त से अपने रिफंड का इंतजार कर रहा हूं. यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं अपनी शिकायत कहां दर्ज कर सकता हूं? कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: कुर्ते की डिलीवरी का समय? यथाशीघ्र।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मेरे ऑर्डर में देरी क्यों हो रही है?", "intent": "track_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे सहायक स्टाफ में शामिल कर लें।", "intent": "human_escalate", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा ऑर्डर ORD6200 एक्सचेंज करें। कृपया।", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप कीमत छिपा सकते हैं? यथाशीघ्र।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि डिलीवरी शुल्क क्या है? यथाशीघ्र।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "नमस्ते, गारंटी का दावा कैसे करें? अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या एक्सप्रेस डिलीवरी उपलब्ध है? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "कृपया मेरा खाता पुनर्प्राप्त करने में मेरी सहायता करें। अब।", "intent": "account_login", "lang": "hi"}
+{"text": "अत्यावश्यक: ऑर्डर ORD8403 के लिए पता अपडेट करें। यथाशीघ्र।", "intent": "change_address", "lang": "hi"}
+{"text": "अत्यावश्यक: यह साड़ी ख़राब है, मुझे वापसी चाहिए। अब।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: मैंने जींस के लिए भुगतान किया लेकिन पुष्टि नहीं मिली। कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या आप जाँच सकते हैं कि मेरा भुगतान हुआ या नहीं? कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "नमस्ते, मैं एक इंसान से बात करना चाहता हूँ। कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मुंबई में कूरियर के बारे में शिकायत. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया मैं 5 स्टार देना चाहता हूं।", "intent": "product_review", "lang": "hi"}
+{"text": "नमस्ते, साइन इन करने में असमर्थ। यथाशीघ्र।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, क्या निगरानी के लिए कोई इकाई बची है?", "intent": "product_availability", "lang": "hi"}
+{"text": "जांचें कि कुर्ते के लिए आकार XXL है या नहीं। कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं मोबाइल से बहुत निराश हूं. अब।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपनी शिकायत कहां दर्ज करा सकता हूं?", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे एक वास्तविक व्यक्ति में स्थानांतरित करें। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं इस आइटम को स्वैप करना चाहता हूं। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मेरे हालिया लेनदेन के साथ भुगतान संबंधी समस्या।", "intent": "payment_issue", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि जाँच करें कि बैग के लिए आकार 8 है या नहीं। कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "नमस्ते, ORD3332 ऑर्डर के लिए मेरे पैसे कहाँ हैं? यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे संचालन का समय बताएं। धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मुझे ग्राहक सेवा प्रतिनिधि मिल सकता है? अब।", "intent": "human_escalate", "lang": "hi"}
+{"text": "कृपया टी-शर्ट की डिलिवरी लागत? धन्यवाद।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कृपया मेरा रिफंड जमा करें। धन्यवाद।", "intent": "refund_status", "lang": "hi"}
+{"text": "कृपया मैं ऑर्डर ORD9477 की समीक्षा करना चाहता हूं। अब।", "intent": "product_review", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि यह ऑर्डर तुरंत रद्द करें।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि प्रोमो कोड का उपयोग कैसे करें? धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं इस आइटम को स्वैप करना चाहता हूं. यथाशीघ्र।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं ऑर्डर ORD5692 को ट्रैक करना चाहता हूं। अब।", "intent": "track_order", "lang": "hi"}
+{"text": "मैं अपना कूपन OFF15 लागू करना भूल गया। धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि ORD5445 के लिए मेरी रिफंड स्थिति जांचें। यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "क्या मुझे इसके बदले मुफ़्त आकार का बैग मिल सकता है? यथाशीघ्र।", "intent": "exchange_product", "lang": "hi"}
+{"text": "कृपया ऑर्डर ORD7764 के लिए मेरा पता बदलें। यथाशीघ्र।", "intent": "change_address", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे अब जूतों की जरूरत नहीं है, रद्द करें। यथाशीघ्र।", "intent": "cancel_order", "lang": "hi"}
+{"text": "अत्यावश्यक: आपकी वापसी नीति क्या है?", "intent": "return_product", "lang": "hi"}
+{"text": "नमस्ते, क्या मेरा ऑर्डर डिलीवरी के लिए है?", "intent": "track_order", "lang": "hi"}
+{"text": "ऐप कहता है कि भुगतान विफल हो गया, लेकिन मेरा बैंक कहता है सफल। धन्यवाद।", "intent": "payment_issue", "lang": "hi"}
+{"text": "नमस्ते, वारंटी अवधि कृपया। यथाशीघ्र।", "intent": "warranty_info", "lang": "hi"}
+{"text": "नमस्ते, मैं अपना डिलीवरी पता बदलना चाहता हूँ। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "मेरे ऑर्डर में देरी क्यों हो रही है? धन्यवाद।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा आदेश वापस लें। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "क्या आपके पास यह स्टॉक में है?", "intent": "product_availability", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या शारीरिक क्षति वारंटी के अंतर्गत आती है?", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया मुझे मेरा रिफंड कब मिलेगा? अब।", "intent": "refund_status", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि आदेश ORD3566 के संबंध में शिकायत दर्ज करें। यथाशीघ्र।", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया मैं एक थोक ऑर्डर देना चाहता हूं।", "intent": "bulk_order", "lang": "hi"}
+{"text": "नमस्ते, मेरा ऑर्डर कहां है? कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "प्रोमो कोड OFF12 स्वीकार नहीं किया जाता है.", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या शिपिंग मुफ़्त है? कृपया।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया मेरा ऑर्डर वापस करने के लिए एक पिकअप शेड्यूल करें।", "intent": "return_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं कल से अपने रिफंड का इंतजार कर रहा हूं। धन्यवाद।", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं इत्र वापस भेजना चाहता हूँ। अब।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा ऑर्डर ORD3427 एक्सचेंज करें। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "कृपया क्या आप वर्तमान में खुले हैं? यथाशीघ्र।", "intent": "store_hours", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं ऑर्डर ORD4001 कैसे वापस कर सकता हूं? यथाशीघ्र।", "intent": "return_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या मेरी टी-शर्ट भेज दी गई है? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, इसे लपेटकर सूरत भेज दो।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "नमस्ते, मैं एक रेटिंग छोड़ना चाहता हूँ। अब।", "intent": "product_review", "lang": "hi"}
+{"text": "क्या आप वर्तमान में खुले हैं?", "intent": "store_hours", "lang": "hi"}
+{"text": "अत्यावश्यक: जूते उपलब्ध होने पर क्या आप मुझे सूचित कर सकते हैं? यथाशीघ्र।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि इस साड़ी पर क्या वारंटी है? अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "अत्यावश्यक: आप कितनी तेजी से अहमदाबाद पहुंचा सकते हैं?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं मेरा वाउचर काम नहीं कर रहा है। यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "नमस्ते, मैं अपने द्वारा खरीदी गई वस्तुओं को बदलना चाहता हूं। यथाशीघ्र।", "intent": "order_modify", "lang": "hi"}
+{"text": "आपकी वापसी नीति क्या है? अब।", "intent": "return_product", "lang": "hi"}
+{"text": "कृपया शिपिंग शुल्क बहुत अधिक है। अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मेरा भुगतान लंबित क्यों है? अब।", "intent": "payment_issue", "lang": "hi"}
+{"text": "नमस्ते, मुझे वारंटी शर्तों के बारे में बताएं। कृपया।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं मुझे वारंटी शर्तों के बारे में बताएं। यथाशीघ्र।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं उत्पाद समीक्षा कहां लिख सकता हूं? अब।", "intent": "product_review", "lang": "hi"}
+{"text": "क्या मैं वह घड़ी वापस कर सकता हूँ जो मैंने 15 अगस्त को खरीदी थी? धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "इस आदेश को तुरंत रद्द करें. अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "क्या शिपिंग मुफ़्त है?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि ऑर्डर ORD4117 से लैपटॉप हटाएं। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "क्या मैं इसे अगले सप्ताह वितरित करवा सकता हूँ? यथाशीघ्र।", "intent": "delivery_time", "lang": "hi"}
+{"text": "नमस्ते, मैं एक इंसान से बात करना चाहता हूँ। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं इस जीन्स की समीक्षा कैसे करूँ?", "intent": "product_review", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरा भुगतान क्यों लंबित है? यथाशीघ्र।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया क्या कुर्ते के लिए कोई इकाई बची है?", "intent": "product_availability", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे अभी तक अपना रिफंड नहीं मिला है। धन्यवाद।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि डिलीवरी स्थान को संशोधित करें। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "प्रोमो कोड का किस प्रकार उपयोग करें? अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "अत्यावश्यक: ऐप कहता है कि भुगतान विफल हो गया, लेकिन मेरा बैंक कहता है सफल। कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "नमस्ते, कृपया मेरा रिफंड जमा करें। धन्यवाद।", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे अब मोबाइल की आवश्यकता नहीं है, रद्द करें।", "intent": "cancel_order", "lang": "hi"}
+{"text": "कृपया मेरा आदेश वापस लें। कृपया।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: जूते मेरे नए पते पर भेज दें।", "intent": "change_address", "lang": "hi"}
+{"text": "थोक छूट उपलब्ध है?", "intent": "bulk_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं इस जीन्स की समीक्षा कैसे करूँ?", "intent": "product_review", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं आदेश ORD2932 के संबंध में शिकायत दर्ज करें।", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया मैं 10 अक्टूबर से अपने रिफंड का इंतजार कर रहा हूं। धन्यवाद।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि डिलीवरी स्थान को संशोधित करें।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या एक्सप्रेस डिलीवरी उपलब्ध है?", "intent": "delivery_time", "lang": "hi"}
+{"text": "मेरा ऑर्डर ORD6163 एक्सचेंज करें। कृपया।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं 5 स्टार देना चाहता हूं. धन्यवाद।", "intent": "product_review", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या वारंटी बैंगलोर में वैध है? कृपया।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या चेन्नई शाखा रविवार को खुली रहती है?", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरे ऑर्डर आइटम को संशोधित करें। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "कृपया क्या मुझे मोबाइल पर निःशुल्क डिलीवरी मिल सकती है? धन्यवाद।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "नमस्ते, मैं अपना ऑर्डर रद्द करना चाहता हूं।", "intent": "cancel_order", "lang": "hi"}
+{"text": "कृपया प्रोमो कोड OFF23 स्वीकार नहीं किया जाता है।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मुझे इसके बदले एक्सएल में जूते मिल सकते हैं?", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं इस आइटम को स्वैप करना चाहता हूं। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "आपका स्टोर कितने बजे खुलता है? धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "कृपया मैं एक इंसान से बात करना चाहता हूं। कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैंने जो कुर्ता खरीदा है उसे रद्द कर दो। धन्यवाद।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मुझे अपनी साड़ी के लिए छोटे साइज़ की ज़रूरत है। अब।", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं 42 जूते ऑर्डर करना चाहता हूं। अब।", "intent": "bulk_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं 78 परफ्यूम का ऑर्डर देना चाहता हूं।", "intent": "bulk_order", "lang": "hi"}
+{"text": "डिलीवरी शुल्क क्या है?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या आप उपहार लपेटने की पेशकश करते हैं? कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया मैं ऑर्डर ORD6170 कैसे वापस कर सकता हूँ? कृपया।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: कृपया परफ्यूम के लिए मेरी डिलीवरी निरस्त करें। यथाशीघ्र।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं ऑर्डर ORD4313 को संशोधित करना चाहता हूं।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, क्या जयपुर शाखा रविवार को खुली है? यथाशीघ्र।", "intent": "store_hours", "lang": "hi"}
+{"text": "मैं 5 स्टार देना चाहता हूं.", "intent": "product_review", "lang": "hi"}
+{"text": "क्या मुझे कुर्ते पर मुफ़्त डिलीवरी मिल सकती है? कृपया।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मेरे लौटाए गए बैग के लिए धन-वापसी की स्थिति? अब।", "intent": "refund_status", "lang": "hi"}
+{"text": "डिलीवरी पता कैसे संपादित करें? धन्यवाद।", "intent": "change_address", "lang": "hi"}
+{"text": "आप डिलीवरी के लिए शुल्क क्यों ले रहे हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "प्रोमो कोड का किस प्रकार उपयोग करें? यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं परफ्यूम की समीक्षा के लिए तस्वीरें अपलोड कर सकता हूं?", "intent": "product_review", "lang": "hi"}
+{"text": "कृपया आपके व्यावसायिक घंटे क्या हैं? धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि ऑर्डर ORD6432 कब आएगा? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "क्या मैं थोक में खरीद सकता हूँ?", "intent": "bulk_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि यह ऑर्डर तुरंत रद्द करें।", "intent": "cancel_order", "lang": "hi"}
+{"text": "नमस्ते, मुझे वारंटी शर्तों के बारे में बताएं। धन्यवाद।", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या एक्सप्रेस डिलीवरी उपलब्ध है? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मेरे ऑर्डर ORD1355 की स्थिति क्या है?", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: बैंगलोर में हमारे कार्यालय के लिए कॉर्पोरेट ऑर्डर।", "intent": "bulk_order", "lang": "hi"}
+{"text": "मैं उपहार लपेटने की लागत जानना चाहता हूँ?", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं एक उपहार संदेश जोड़ें।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या मुझे इसके बदले S में परफ्यूम मिल सकता है?", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं यह जीन्स वापस करना चाहता हूँ। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "रिफंड की प्रक्रिया कितने दिनों में पूरी होगी? अब।", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: डिलीवरी का अनुमानित समय क्या है?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि डिलीवरी का अनुमानित समय क्या है? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप टी-शर्ट उपलब्ध होने पर मुझे सूचित कर सकते हैं? कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं उपहार लपेटने की लागत जानना चाहता हूँ?", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि ऑर्डर ORD1945 की सेवा भयानक थी।", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: मुंबई के लिए शिपिंग कितनी है? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे वारंटी शर्तों के बारे में बताएं। धन्यवाद।", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया मैं अपना हालिया ऑर्डर कैसे रद्द करूं? यथाशीघ्र।", "intent": "cancel_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरे खाते से गलती से राशि काट ली गई। अब।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया क्या आप कल खुले थे?", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे अभी तक अपना रिफंड नहीं मिला है। कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "मानवीय हस्तक्षेप की आवश्यकता है. धन्यवाद।", "intent": "human_escalate", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं भुगतान विफल रहा लेकिन राशि डेबिट हो गई।", "intent": "payment_issue", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं थोक में खरीद सकता हूं? धन्यवाद।", "intent": "bulk_order", "lang": "hi"}
+{"text": "क्या मुझे ORD5281 ऑर्डर के लिए शिपिंग का भुगतान करना होगा? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे एक औपचारिक शिकायत करनी है। अब।", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: डिलीवरी स्थान को संशोधित करें। धन्यवाद।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं मुझे वापस कॉल करें। अब।", "intent": "human_escalate", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या मैं अपना हालिया ऑर्डर बदल सकता हूँ? धन्यवाद।", "intent": "order_modify", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा ऑर्डर कहां है?", "intent": "track_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि इसे लपेटकर हैदराबाद भेज दें।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि OFF36 मेरे कार्ट पर लागू क्यों नहीं हो रहा है? धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि अभी साइन इन करने में असमर्थ हूं।", "intent": "account_login", "lang": "hi"}
+{"text": "कृपया मेरा ऑर्डर ORD7165 एक्सचेंज करें। कृपया।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं 66 साड़ी का ऑर्डर देना चाहती हूं। अब।", "intent": "bulk_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि ऑर्डर ORD8267 के लिए मेरा पता बदलें। अब।", "intent": "change_address", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि उत्पाद समीक्षा कैसे जोड़ें?", "intent": "product_review", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि कुर्ते पर कितने महीने की वारंटी है? धन्यवाद।", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या मुझे अपना ऑर्डर शुक्रवार तक प्राप्त होगा?", "intent": "delivery_time", "lang": "hi"}
+{"text": "कृपया क्या मैं ऑर्डर ORD7760 की विशेषताएँ बदल सकता हूँ? धन्यवाद।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, मानवीय हस्तक्षेप की आवश्यकता है।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं अपना पासवर्ड कैसे रीसेट करूं? धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं अपनी शिकायत कहां दर्ज करा सकता हूं? धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "आप शिपिंग के लिए कितना शुल्क लेते हैं? यथाशीघ्र।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं घड़ी वापस भेजना चाहता हूँ। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: इस परफ्यूम पर वारंटी क्या है? अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "ऑर्डर ORD8183 से कुर्ता उतारें. धन्यवाद।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या आपके पास यह स्टॉक में है?", "intent": "product_availability", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या आप जाँच सकते हैं कि मेरा भुगतान हुआ या नहीं? अब।", "intent": "payment_issue", "lang": "hi"}
+{"text": "यह घड़ी ख़राब है, मुझे वापसी चाहिए। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरे ऑर्डर ORD1659 की स्थिति क्या है?", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: ऑर्डर ORD7917 के लिए मेरा पता बदलें। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि रिफंड की प्रक्रिया कितने दिनों में पूरी होगी?", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं ऑर्डर ORD9855 को ट्रैक करना चाहता हूं। धन्यवाद।", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, मेरे लौटाए गए लैपटॉप के लिए रिफंड की स्थिति?", "intent": "refund_status", "lang": "hi"}
+{"text": "क्या आप बैग उपलब्ध होने पर मुझे सूचित कर सकते हैं? कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मुझे ग्राहक सेवा प्रतिनिधि मिल सकता है? कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "भुगतान विफल रहा लेकिन राशि डेबिट हो गई. कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या मैं आज दिया गया ऑर्डर रद्द कर सकता हूँ? अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "साइन इन करने में असमर्थ. यथाशीघ्र.", "intent": "account_login", "lang": "hi"}
+{"text": "मैं स्टोर खोलने का शेड्यूल जानना चाहता हूं? धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मुझे जूतों की मुफ्त डिलीवरी मिल सकती है? धन्यवाद।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे टी-शर्ट की डिलीवरी लागत बता सकते हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या आप कीमत छुपा सकते हैं?", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया भुगतान विफल रहा लेकिन राशि डेबिट हो गई। धन्यवाद।", "intent": "payment_issue", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं ये जूते बदलना चाहता हूं। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "नमस्ते, मुझे मेरी टी-शर्ट के लिए ट्रैकिंग लिंक दें। कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "कृपया मुझे थोक में टी-शर्ट ऑर्डर करने की आवश्यकता है। यथाशीघ्र।", "intent": "bulk_order", "lang": "hi"}
+{"text": "कृपया आप कितने बजे तक खुले हैं? कृपया।", "intent": "store_hours", "lang": "hi"}
+{"text": "एक उपहार संदेश जोड़ें. यथाशीघ्र।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या आप मुझे मेरी डिलीवरी पर कोई अपडेट बता सकते हैं?", "intent": "track_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि कृपया मेरी प्रोफ़ाइल अनलॉक करें।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या मैं इसे कल डिलीवर करवा सकता हूँ? धन्यवाद।", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं ऑर्डर ORD1201 को ट्रैक करना चाहता हूँ। अब।", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, राशि मेरे बैंक खाते में कब दिखाई देगी? कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं एक रेटिंग छोड़ना चाहता हूँ।", "intent": "product_review", "lang": "hi"}
+{"text": "कृपया डिलीवरी पता कैसे संपादित करें?", "intent": "change_address", "lang": "hi"}
+{"text": "कृपया मेरी शिकायत ले लें. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि चेन्नई के लिए शिपिंग का किराया कितना है? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपने खाते में लॉग इन नहीं कर सकता।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, चेन्नई में कूरियर के बारे में शिकायत। अब।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि इसे लपेटकर कोलकाता भेज दें। अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैंने 82 का ऑर्डर दिया लेकिन मुझे और चाहिए। अब।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि ORD3569 के लिए मेरी धनवापसी स्थिति जांचें। यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "मुझे मेरे परफ्यूम के लिए ट्रैकिंग लिंक दें। कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "ऑर्डर ORD1981 के लिए मुझसे दो बार शुल्क लिया गया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया क्या शिपिंग मुफ़्त है? कृपया।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: प्रोमो कोड OFF19 स्वीकार नहीं किया गया है।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि वस्तु क्षतिग्रस्त हो गई है, मुझे इसे वापस करना होगा। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मेरी टी-शर्ट भेज दी गई है? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या यह आइटम स्टॉक में नहीं है? अब।", "intent": "product_availability", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं यह छूट क्यों लागू नहीं कर सकता? यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "ऑर्डर ORD3419 से कुर्ता हटाएं।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं एक इंसान से बात करना चाहता हूं. कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं थोक में खरीद सकता हूं? कृपया।", "intent": "bulk_order", "lang": "hi"}
+{"text": "नमस्ते, विनिमय नीति? यथाशीघ्र।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मुझे ऑर्डर ORD2952 के लिए शिपिंग का भुगतान करना होगा? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरी डिलीवरी पर कोई अपडेट है? अब।", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, मुझे अब साड़ी की आवश्यकता नहीं है, रद्द करें।", "intent": "cancel_order", "lang": "hi"}
+{"text": "हम बड़ी मात्रा में खरीदारी करना चाह रहे हैं। धन्यवाद।", "intent": "bulk_order", "lang": "hi"}
+{"text": "मुझे वारंटी शर्तों के बारे में बताएं.", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे अब जूतों की जरूरत नहीं है, रद्द करें। धन्यवाद।", "intent": "cancel_order", "lang": "hi"}
+{"text": "कृपया मैं इस आइटम को स्वैप करना चाहता हूं। अब।", "intent": "exchange_product", "lang": "hi"}
+{"text": "अत्यावश्यक: उत्पाद समीक्षा कैसे जोड़ें? कृपया।", "intent": "product_review", "lang": "hi"}
+{"text": "नमस्ते, क्या शिपिंग मुफ़्त है? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि राशि मेरे बैंक खाते में कब दिखाई देगी?", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे एक औपचारिक शिकायत करनी है। यथाशीघ्र।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपना पासवर्ड कैसे रीसेट करूं?", "intent": "account_login", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरा बैग वारंटी के अंतर्गत है। अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया मुझे लॉगिन करने के लिए ओटीपी नहीं मिल रहा है।", "intent": "account_login", "lang": "hi"}
+{"text": "कृपया ऑर्डर ORD8576 की सेवा भयानक थी। धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया मेरी डिलीवरी पर कोई अपडेट? अब।", "intent": "track_order", "lang": "hi"}
+{"text": "कृपया क्या मैं अपने वर्तमान ऑर्डर में घड़ी जोड़ सकता हूँ? अब।", "intent": "order_modify", "lang": "hi"}
+{"text": "कृपया मोबाइल की उपलब्धता बताएं। कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैंने 6 का ऑर्डर दिया लेकिन मुझे और चाहिए। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि कृपया मेरी प्रोफ़ाइल अनलॉक करें।", "intent": "account_login", "lang": "hi"}
+{"text": "हैदराबाद तक शिपिंग का किराया कितना है? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपना हालिया ऑर्डर कैसे रद्द करूं?", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मेरे जूते भेज दिये गये हैं?", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, मैं इस साड़ी की समीक्षा कैसे करूँ? कृपया।", "intent": "product_review", "lang": "hi"}
+{"text": "कृपया मैं गिफ्ट रैप के बारे में जानना चाहता हूं। यथाशीघ्र।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया कृपया मेरी प्रोफ़ाइल अनलॉक करें।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, क्या परफ्यूम उपलब्ध होने पर आप मुझे सूचित कर सकते हैं? धन्यवाद।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि आप कितने बजे तक खुले हैं? अब।", "intent": "store_hours", "lang": "hi"}
+{"text": "शिपिंग शुल्क बहुत अधिक है.", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे एक वास्तविक व्यक्ति में स्थानांतरित करें। कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "खाता USR729 पहुंच योग्य नहीं है. धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या मुझे इसके बदले एस में जींस मिल सकती है?", "intent": "exchange_product", "lang": "hi"}
+{"text": "ORD7075 के लिए मेरी धनवापसी स्थिति जांचें। धन्यवाद।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरा भुगतान अटक गया है।", "intent": "payment_issue", "lang": "hi"}
+{"text": "गारंटी का दावा कैसे करें?", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया टी-शर्ट की उपलब्धता बताएं।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि इस साड़ी को बड़ी साड़ी से बदलें। अब।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मुझे ORD8672 ऑर्डर के लिए उपहार पैकेजिंग चाहिए। कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं एक रेटिंग छोड़ना चाहता हूँ. धन्यवाद।", "intent": "product_review", "lang": "hi"}
+{"text": "कृपया क्या मुझे अपना ऑर्डर कल तक प्राप्त हो जाएगा?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या घड़ी उपलब्ध होने पर आप मुझे सूचित कर सकते हैं? अब।", "intent": "product_availability", "lang": "hi"}
+{"text": "नमस्ते, मैं अपने द्वारा खरीदी गई वस्तुओं को बदलना चाहता हूं। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं अपने खाते में लॉग इन नहीं कर सकता. यथाशीघ्र।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप इस मोबाइल को उपहार के रूप में लपेट सकते हैं? अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं 5 स्टार देना चाहता हूं। यथाशीघ्र।", "intent": "product_review", "lang": "hi"}
+{"text": "क्या परफ्यूम उपलब्ध होने पर आप मुझे सूचित कर सकते हैं? कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "कृपया ORD7969 के लिए शिपमेंट रोकें। यथाशीघ्र।", "intent": "cancel_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं मेरी शिकायत ले लो. अब।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मेरी डिलीवरी पर कोई अपडेट? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, खाता USR465 पहुंच योग्य नहीं है। कृपया।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपनी शिकायत कहां दर्ज करा सकता हूं? धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया मेरी डिलीवरी पर कोई अपडेट? धन्यवाद।", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, मैं घड़ी वापस भेजना चाहता हूँ। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "हैदराबाद में स्टोर का समय?", "intent": "store_hours", "lang": "hi"}
+{"text": "जींस फिट नहीं आ रही, एक्सचेंज चाहिए।", "intent": "exchange_product", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मैं टी-शर्ट पर कूपन लगा सकता हूँ?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "नमस्ते, मैं एक रेटिंग छोड़ना चाहता हूँ। अब।", "intent": "product_review", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या आप कल खुले रहेंगे? कृपया।", "intent": "store_hours", "lang": "hi"}
+{"text": "कृपया मैं एक बॉट से बात करते-करते थक गया हूँ। अब।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं 5 स्टार देना चाहता हूँ। कृपया।", "intent": "product_review", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे ग्राहक सेवा से बात करने दीजिए। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मेरे ऑर्डर में देरी क्यों हो रही है?", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: ऑर्डर ORD5965 के लिए पता अपडेट करें।", "intent": "change_address", "lang": "hi"}
+{"text": "कृपया आपका स्टोर कितने बजे खुलता है?", "intent": "store_hours", "lang": "hi"}
+{"text": "जयपुर में स्टोर का समय?", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप कीमत छिपा सकते हैं? यथाशीघ्र।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे अपने परफ्यूम के लिए छोटे आकार की आवश्यकता है। अब।", "intent": "exchange_product", "lang": "hi"}
+{"text": "कृपया मुझे लॉगिन करने के लिए ओटीपी नहीं मिल रहा है। कृपया।", "intent": "account_login", "lang": "hi"}
+{"text": "मुझे एक एजेंट से जोड़ो.", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं अपने वर्तमान ऑर्डर में घड़ी जोड़ सकता हूं? यथाशीघ्र।", "intent": "order_modify", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैंने गलत पता डाल दिया है, कृपया इसे बदल दें। धन्यवाद।", "intent": "change_address", "lang": "hi"}
+{"text": "नमस्ते, आपकी ग्राहक सेवा ख़राब है, मैं शिकायत करना चाहता हूँ। यथाशीघ्र।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैं अपना हालिया ऑर्डर कैसे रद्द करूं? धन्यवाद।", "intent": "cancel_order", "lang": "hi"}
+{"text": "नमस्ते, डिलीवरी शुल्क क्या है?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: इस मोबाइल पर वारंटी क्या है?", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया आपके व्यावसायिक घंटे क्या हैं?", "intent": "store_hours", "lang": "hi"}
+{"text": "नमस्ते, क्या यह आइटम स्टॉक में नहीं है? यथाशीघ्र।", "intent": "product_availability", "lang": "hi"}
+{"text": "कृपया आप कितनी तेजी से बैंगलोर पहुंचा सकते हैं? धन्यवाद।", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं संचालन के घंटे बतायें। कृपया।", "intent": "store_hours", "lang": "hi"}
+{"text": "नमस्ते, मैंने मोबाइल के लिए भुगतान किया लेकिन पुष्टि नहीं मिली।", "intent": "payment_issue", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा ऑर्डर ORD5260 कब वितरित किया जाएगा? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "नमस्ते, मुझे एक एजेंट से जोड़ें।", "intent": "human_escalate", "lang": "hi"}
+{"text": "उत्पाद पर एक टिप्पणी छोड़ें. कृपया।", "intent": "product_review", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि ORD1520 ऑर्डर के लिए मेरा कार्ट अपडेट करें। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं ऑर्डर ORD4668 को ट्रैक करना चाहता हूं।", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, क्या मैं आकार 10 को दूसरे आकार से बदल सकता हूँ? धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा लॉगिन विफल हो रहा है।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि शिपिंग शुल्क क्या हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया मेरा वाउचर काम नहीं कर रहा है।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या मैं घड़ी की समीक्षा के लिए फ़ोटो अपलोड कर सकता हूँ? अब।", "intent": "product_review", "lang": "hi"}
+{"text": "ORD8852 ऑर्डर के लिए मेरा कार्ट अपडेट करें। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "कृपया क्या मुझे टी-शर्ट पर निःशुल्क डिलीवरी मिल सकती है? धन्यवाद।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया मेरी प्रोफ़ाइल अनलॉक करें. यथाशीघ्र।", "intent": "account_login", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं इस जींस को बदलना चाहता हूं। यथाशीघ्र।", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि लैपटॉप के लिए साइज 8 है या नहीं।", "intent": "product_availability", "lang": "hi"}
+{"text": "अत्यावश्यक: ORD1917 के लिए मेरी धनवापसी स्थिति की जाँच करें। यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं उपहार लपेटने की लागत जानना चाहता हूँ? अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "अत्यावश्यक: डिस्काउंट कोड OFF14 एक त्रुटि दिखा रहा है। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मुझे एक उपहार के रूप में इसकी आवश्यकता है। कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "नमस्ते, कृपया मेरा रिफंड जमा करें। कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "नमस्ते, कोलकाता में स्टोर का समय?", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं जूतों से बहुत निराश हूं। धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि हम बड़ी मात्रा में खरीदारी करना चाह रहे हैं।", "intent": "bulk_order", "lang": "hi"}
+{"text": "कृपया क्या आप साड़ी उपलब्ध होने पर मुझे सूचित कर सकते हैं? यथाशीघ्र।", "intent": "product_availability", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कृपया मेरा रिफंड जमा करें। यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: कृपया मात्रा को 9 में बदलें।", "intent": "order_modify", "lang": "hi"}
+{"text": "मुझे मेरे बैग के लिए ट्रैकिंग लिंक दें। कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे मैनेजर से बात करनी होगी। कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं ऑर्डर ORD6613 कैसे वापस कर सकता हूँ? अब।", "intent": "return_product", "lang": "hi"}
+{"text": "मैं उत्पाद समीक्षा कहां लिख सकता हूं? यथाशीघ्र।", "intent": "product_review", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं परफ्यूम पर कूपन लगा सकता हूं? धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "आप डिलीवरी के लिए शुल्क क्यों ले रहे हैं? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे घड़ी की डिलीवरी लागत बता सकते हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया ऑर्डर ORD5818 के लिए मेरा पता बदलें।", "intent": "change_address", "lang": "hi"}
+{"text": "अत्यावश्यक: एक उपहार संदेश जोड़ें.", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया क्या मैं बैग पर कूपन लगा सकता हूँ?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं कुर्ते की डिलीवरी का समय जानना चाहता हूँ? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे विनिमय नीति बता सकते हैं? अब।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि डिलीवरी का अनुमानित समय क्या है? कृपया।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मैंने गलत पता डाल दिया है, कृपया इसे बदल दें। अब।", "intent": "change_address", "lang": "hi"}
+{"text": "नमस्ते, क्या मुझे ORD7796 ऑर्डर के लिए शिपिंग का भुगतान करना होगा? यथाशीघ्र।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया कुर्ता की उपलब्धता। धन्यवाद।", "intent": "product_availability", "lang": "hi"}
+{"text": "कृपया ऑर्डर ORD6328 के लिए मेरा कार्ट अपडेट करें। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या शिपिंग मुफ़्त है? यथाशीघ्र।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मात्रा को 49 में बदलें.", "intent": "order_modify", "lang": "hi"}
+{"text": "अत्यावश्यक: कृपया वारंटी अवधि। अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या जूतों की कोई इकाई बची है? यथाशीघ्र।", "intent": "product_availability", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या आपके पास यह स्टॉक में है? यथाशीघ्र।", "intent": "product_availability", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि बैंगलोर के लिए शिपिंग का किराया कितना है?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया डिलीवरी पता कैसे संपादित करें? अब।", "intent": "change_address", "lang": "hi"}
+{"text": "कृपया मुझे लॉगिन करने के लिए ओटीपी नहीं मिल रहा है।", "intent": "account_login", "lang": "hi"}
+{"text": "मैं अपना डिलीवरी पता बदलना चाहता हूं. धन्यवाद।", "intent": "change_address", "lang": "hi"}
+{"text": "नमस्ते, वारंटी में क्या शामिल है? धन्यवाद।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं एक बॉट से बात करते-करते थक गया हूँ।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, ऑर्डर रद्द करें ORD2380।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मुझे सहायक कर्मचारियों के पास भेजो। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "कृपया क्या एक्सप्रेस डिलीवरी उपलब्ध है?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा भुगतान क्यों लंबित है? अब।", "intent": "payment_issue", "lang": "hi"}
+{"text": "क्या आप जाँच सकते हैं कि मेरा भुगतान हुआ या नहीं? कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "आप कितने बजे तक खुले हैं?", "intent": "store_hours", "lang": "hi"}
+{"text": "मुझे थोक में मोबाइल ऑर्डर करना है.", "intent": "bulk_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे डिलीवरी से जुड़ी किसी समस्या की रिपोर्ट करनी होगी। धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा खाता पुनर्प्राप्त करने में मेरी सहायता करें।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, मेरे खाते से गलती से राशि काट ली गई। कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि थोक मूल्य निर्धारण कैसे प्राप्त करें? अब।", "intent": "bulk_order", "lang": "hi"}
+{"text": "नमस्ते, क्या मुझे अपना ऑर्डर सोमवार तक प्राप्त होगा? धन्यवाद।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि ORD1020 ऑर्डर के लिए मेरे पैसे कहां हैं? कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा लॉगिन विफल हो रहा है।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, मैं जींस वापस भेजना चाहता हूं।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा ऑर्डर ORD6830 कब वितरित किया जाएगा? कृपया।", "intent": "delivery_time", "lang": "hi"}
+{"text": "नमस्ते, मुझे ग्राहक सेवा से बात करने दीजिए। कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या यह गारंटी के साथ आता है? अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरे हालिया लेनदेन के साथ भुगतान संबंधी समस्या। यथाशीघ्र।", "intent": "payment_issue", "lang": "hi"}
+{"text": "नमस्ते, मुझे मैनेजर से बात करनी है। अब।", "intent": "human_escalate", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा लॉगिन विफल हो रहा है। अब।", "intent": "account_login", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मैं बैग पर कूपन लगा सकता हूँ?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "अत्यावश्यक: आप कितनी तेजी से अहमदाबाद पहुंचा सकते हैं? कृपया।", "intent": "delivery_time", "lang": "hi"}
+{"text": "अत्यावश्यक: प्रोमो कोड OFF33 स्वीकार नहीं किया गया है। धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मोबाइल फिट नहीं है, एक्सचेंज चाहिए। अब।", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपना पासवर्ड कैसे रीसेट करूं?", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, मुझे मेरी साड़ी के लिए ट्रैकिंग लिंक दें। कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे मैनेजर से बात करनी है। कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपना डिलीवरी पता बदलना चाहता हूं।", "intent": "change_address", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या एक्सप्रेस डिलीवरी उपलब्ध है? कृपया।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मुझे लॉगिन करने के लिए ओटीपी नहीं मिल रहा है। धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या मैं शुक्रवार को दिया गया ऑर्डर रद्द कर सकता हूँ? धन्यवाद।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि इसे अहमदाबाद में वितरित करें। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या उपहार के रूप में साड़ी भेजने का कोई विकल्प है? यथाशीघ्र।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे एक एजेंट से जोड़ें। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, क्या मैं अपना हालिया ऑर्डर बदल सकता हूँ?", "intent": "order_modify", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या आप सोमवार को खुले हैं? अब।", "intent": "store_hours", "lang": "hi"}
+{"text": "शिपिंग शुल्क क्या हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया मुझे अपने मोबाइल के लिए छोटे आकार की आवश्यकता है। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे अब जूतों की आवश्यकता नहीं है, रद्द करें। धन्यवाद।", "intent": "cancel_order", "lang": "hi"}
+{"text": "नमस्ते, मैंने 57 का ऑर्डर दिया लेकिन मुझे और चाहिए। धन्यवाद।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं मुझे वापस कॉल करें. अब।", "intent": "human_escalate", "lang": "hi"}
+{"text": "ऑर्डर ORD3692 के लिए पता अपडेट करें। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "नमस्ते, मेरा खाता पुनर्प्राप्त करने में मेरी सहायता करें। कृपया।", "intent": "account_login", "lang": "hi"}
+{"text": "कृपया मेरा कूपन कोड OFF20 काम नहीं कर रहा है। यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे थोक में टी-शर्ट ऑर्डर करने की ज़रूरत है।", "intent": "bulk_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या आप वर्तमान में खुले हैं?", "intent": "store_hours", "lang": "hi"}
+{"text": "कृपया भुगतान विफल रहा लेकिन राशि डेबिट हो गई। धन्यवाद।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया क्या सूरत शाखा रविवार को खुली है? अब।", "intent": "store_hours", "lang": "hi"}
+{"text": "नमस्ते, मैंने 79 का ऑर्डर दिया लेकिन मुझे और चाहिए। यथाशीघ्र।", "intent": "order_modify", "lang": "hi"}
+{"text": "आपके व्यवसाय के घंटे क्या हैं? कृपया।", "intent": "store_hours", "lang": "hi"}
+{"text": "अत्यावश्यक: उत्पाद पर एक टिप्पणी छोड़ें। अब।", "intent": "product_review", "lang": "hi"}
+{"text": "आपकी वापसी नीति क्या है?", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे वापस बुलाओ। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मैं टी-शर्ट पर कूपन लगा सकता हूँ? यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "अत्यावश्यक: मैंने मोबाइल के लिए भुगतान किया लेकिन पुष्टि नहीं मिली।", "intent": "payment_issue", "lang": "hi"}
+{"text": "मैं कुर्ते से बहुत निराश हूं. यथाशीघ्र।", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या आप वर्तमान में खुले हैं? अब।", "intent": "store_hours", "lang": "hi"}
+{"text": "नमस्ते, ORD3529 के लिए मेरी धनवापसी स्थिति जांचें। कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "कृपया मुझे डिलीवरी से संबंधित किसी समस्या की रिपोर्ट करनी होगी। कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा भुगतान क्यों लंबित है? कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "नमस्ते, OFF47 मेरे कार्ट पर लागू क्यों नहीं हो रहा है?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कृपया मेरा रिफंड जमा करें। यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं अपने लौटाए गए परफ्यूम के लिए रिफंड की स्थिति जानना चाहता हूं? कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "कृपया ऐप कहता है कि भुगतान विफल हो गया, लेकिन मेरा बैंक कहता है सफल। अब।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया मेरा वाउचर काम नहीं कर रहा है। धन्यवाद।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं खरीदी गई वस्तुओं को बदलना चाहता हूं। कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि आप डिलीवरी के लिए शुल्क क्यों ले रहे हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "कृपया क्या चेन्नई शाखा रविवार को खुली है?", "intent": "store_hours", "lang": "hi"}
+{"text": "मेरा ऑर्डर ORD8720 कब डिलीवर होगा?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरे ऑर्डर ORD5515 की स्थिति क्या है? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "कृपया क्या आप वर्तमान में खुले हैं? अब।", "intent": "store_hours", "lang": "hi"}
+{"text": "कृपया मेरी डिलीवरी पर कोई अपडेट?", "intent": "track_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि शिपिंग शुल्क क्या हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "नमस्ते, क्या आप कीमत छुपा सकते हैं? कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि ORD3948 के लिए शिपमेंट रोकें। कृपया।", "intent": "cancel_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं मुझे किसी एजेंट से जोड़ सकते हैं।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, एक उपहार संदेश जोड़ें. अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया मेरा वाउचर काम नहीं कर रहा है। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "नमस्ते, B2B ऑर्डर करने की प्रक्रिया? कृपया।", "intent": "bulk_order", "lang": "hi"}
+{"text": "नमस्ते, मेरी डिलीवरी पर कोई अपडेट?", "intent": "track_order", "lang": "hi"}
+{"text": "नमस्ते, वारंटी अवधि कृपया।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं अपनी शिकायत कहां दर्ज कर सकता हूं? कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या मेरा कुर्ता भेज दिया गया है? कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "कृपया जयपुर में हमारे कार्यालय के लिए कॉर्पोरेट ऑर्डर दें। कृपया।", "intent": "bulk_order", "lang": "hi"}
+{"text": "नमस्ते, मुझे वारंटी शर्तों के बारे में बताएं।", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या मोबाइल फ्री साइज़ में उपलब्ध है? कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि ऑर्डर ORD4064 कब आएगा? अब।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या आप उपहार लपेटने की पेशकश करते हैं? धन्यवाद।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं इस आइटम को बदलना चाहता हूं। यथाशीघ्र।", "intent": "exchange_product", "lang": "hi"}
+{"text": "नमस्ते, भुगतान विफल रहा लेकिन राशि डेबिट हो गई।", "intent": "payment_issue", "lang": "hi"}
+{"text": "क्या आप मुझे वारंटी शर्तों के बारे में बता सकते हैं? धन्यवाद।", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं इस आइटम को बदलना चाहता हूं। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "नमस्ते, मुझे ग्राहक सेवा से बात करने दीजिए। अब।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि कृपया बैग के लिए मेरी डिलीवरी निरस्त करें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "कृपया क्या आप जूतों के 20 टुकड़ों पर छूट प्रदान करते हैं? यथाशीघ्र।", "intent": "bulk_order", "lang": "hi"}
+{"text": "आप डिलीवरी के लिए शुल्क क्यों ले रहे हैं? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मेरी शिकायत ले लो.", "intent": "complaint_register", "lang": "hi"}
+{"text": "मेरा ऑर्डर ORD9953 कब डिलीवर होगा? यथाशीघ्र।", "intent": "delivery_time", "lang": "hi"}
+{"text": "थोक छूट उपलब्ध है? अब।", "intent": "bulk_order", "lang": "hi"}
+{"text": "कृपया मेरा ऑर्डर ORD1513 एक्सचेंज करें। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि जूतों पर अपनी प्रतिक्रिया कैसे साझा करूं? यथाशीघ्र।", "intent": "product_review", "lang": "hi"}
+{"text": "कृपया मुंबई कितने दिनों में पहुंचाएं?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप कृपया मुझे परफ्यूम की उपलब्धता बता सकते हैं। धन्यवाद।", "intent": "product_availability", "lang": "hi"}
+{"text": "आदेश ORD7721 के संबंध में शिकायत दर्ज करें।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैं अपना डिलीवरी पता बदलना चाहता हूं. यथाशीघ्र।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैंने गलत पता डाल दिया है, कृपया इसे बदल दें। धन्यवाद।", "intent": "change_address", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या आप जाँच सकते हैं कि मेरा भुगतान हुआ या नहीं?", "intent": "payment_issue", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे उपहार के रूप में इसकी आवश्यकता है।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या रिफंड शुरू कर दिया गया है? धन्यवाद।", "intent": "refund_status", "lang": "hi"}
+{"text": "नमस्ते, डिस्काउंट कोड OFF45 एक त्रुटि दिखा रहा है। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बैग की डिलीवरी का समय बता सकते हैं?", "intent": "delivery_time", "lang": "hi"}
+{"text": "आपकी ग्राहक सेवा ख़राब है, मैं शिकायत करना चाहता हूँ।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मुझे एक औपचारिक शिकायत करनी है.", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया लैपटॉप के लिए मेरी डिलीवरी निरस्त करें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं पुणे में शिपिंग पता बदल सकता हूं? यथाशीघ्र।", "intent": "change_address", "lang": "hi"}
+{"text": "डिस्काउंट कोड OFF41 एक त्रुटि दिखा रहा है।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "कृपया इसे उपहार में लपेटें। कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या यह गारंटी के साथ आता है?", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कृपया मेरा रिफंड जमा करें। अब।", "intent": "refund_status", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि यह ऑर्डर तुरंत रद्द करें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "जांचें कि लैपटॉप के लिए आकार 8 है या नहीं।", "intent": "product_availability", "lang": "hi"}
+{"text": "नमस्ते, मेरा वाउचर काम नहीं कर रहा है। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं मेरी शिकायत ले लो. यथाशीघ्र।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरे खाते से गलती से कितनी राशि कट गई। यथाशीघ्र।", "intent": "payment_issue", "lang": "hi"}
+{"text": "मैं जानना चाहता हूँ क्या आप मेरा ऑर्डर ट्रैक कर सकते हैं? कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "मैं जूतों की डिलीवरी लागत जानना चाहता हूँ? धन्यवाद।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं 5 स्टार देना चाहता हूं।", "intent": "product_review", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि वस्तु क्षतिग्रस्त हो गई है, मुझे इसे वापस करना होगा। कृपया।", "intent": "return_product", "lang": "hi"}
+{"text": "जींस की डिलिवरी लागत? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैंने जो टी-शर्ट खरीदी है उसे रद्द करें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "नमस्ते, थोक छूट उपलब्ध है?", "intent": "bulk_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे बैग पसंद नहीं आया, वापसी की व्यवस्था करें। अब।", "intent": "return_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या आप बैग के 14 टुकड़ों पर छूट प्रदान करते हैं?", "intent": "bulk_order", "lang": "hi"}
+{"text": "मैं परफ्यूम से बहुत निराश हूं. धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैं अपने हालिया लेनदेन के भुगतान संबंधी मुद्दे के बारे में जानना चाहता हूं। धन्यवाद।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया मैं एक रेटिंग छोड़ना चाहता हूँ।", "intent": "product_review", "lang": "hi"}
+{"text": "इसे लपेटकर सूरत भेज दो। कृपया।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "नमस्ते, क्या मैं थोक में खरीद सकता हूँ? अब।", "intent": "bulk_order", "lang": "hi"}
+{"text": "नमस्ते, मुझे उपहार के रूप में इसकी आवश्यकता है। अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "क्या मैं इसे शुक्रवार को डिलीवर करवा सकता हूँ? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मेरी टी-शर्ट वारंटी में है। कृपया।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं अपने द्वारा खरीदी गई वस्तुओं को बदलना चाहता हूं। धन्यवाद।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, ORD2521 के लिए शिपमेंट रोकें।", "intent": "cancel_order", "lang": "hi"}
+{"text": "कृपया इसे उपहार में लपेटें। धन्यवाद।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "अत्यावश्यक: ऑर्डर रद्द करें ORD7262। धन्यवाद।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं एक बॉट से बात करते-करते थक गया हूँ।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: इस मोबाइल को बड़े मोबाइल से बदलें। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "क्या आप कीमत छिपा सकते हैं?", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि आपके व्यवसाय के घंटे क्या हैं? कृपया।", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा ऑर्डर कहां है? कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं एक बॉट से बात करते-करते थक गया हूँ।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे अपने बैग के लिए छोटे आकार की आवश्यकता है। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "अत्यावश्यक: आप शिपिंग के लिए कितना शुल्क लेते हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे यह घड़ी चाहिए। क्या यह उपलब्ध है? धन्यवाद।", "intent": "product_availability", "lang": "hi"}
+{"text": "कृपया घड़ी की उपलब्धता बताएं।", "intent": "product_availability", "lang": "hi"}
+{"text": "कृपया रिफंड की प्रक्रिया कितने दिनों में पूरी होगी? यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं अपना पासवर्ड भूल गया।", "intent": "account_login", "lang": "hi"}
+{"text": "दिल्ली में हमारे कार्यालय के लिए कॉर्पोरेट ऑर्डर। धन्यवाद।", "intent": "bulk_order", "lang": "hi"}
+{"text": "क्या आप कृपया मुझे यह उपहार लपेटने के बारे में बता सकते हैं।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे एक औपचारिक शिकायत करनी है।", "intent": "complaint_register", "lang": "hi"}
+{"text": "हम बड़ी मात्रा में खरीदारी करना चाह रहे हैं।", "intent": "bulk_order", "lang": "hi"}
+{"text": "कृपया मात्रा को 9 में बदलें।", "intent": "order_modify", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं इस मोबाइल की समीक्षा कैसे करूँ? यथाशीघ्र।", "intent": "product_review", "lang": "hi"}
+{"text": "बैग की डिलीवरी का समय?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप साड़ी के 9 टुकड़ों पर छूट प्रदान करते हैं?", "intent": "bulk_order", "lang": "hi"}
+{"text": "कृपया मैं ऑर्डर ORD7181 ट्रैक करना चाहता हूं। कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि बेंगलुरु के लिए शिपिंग का किराया कितना है?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि ऑर्डर ORD3724 के लिए अपना कार्ट अपडेट करें।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, इसके बजाय इसे मुंबई वितरित करें। यथाशीघ्र।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि अपेक्षित डिलीवरी कब है? यथाशीघ्र।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या सूरत शाखा रविवार को खुली है?", "intent": "store_hours", "lang": "hi"}
+{"text": "नमस्ते, मेरा कूपन कोड OFF45 काम नहीं कर रहा है।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मानवीय हस्तक्षेप की आवश्यकता है.", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, मेरे हालिया लेनदेन में भुगतान संबंधी समस्या। धन्यवाद।", "intent": "payment_issue", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं मुझे कस्टमर केयर से बात करने दीजिए।", "intent": "human_escalate", "lang": "hi"}
+{"text": "नमस्ते, मुझे मेरे जूतों का ट्रैकिंग लिंक दीजिए।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मैंने 46 का ऑर्डर दिया लेकिन मुझे और चाहिए।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, कोलकाता में स्टोर का समय?", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि आप शिपिंग के लिए कितना शुल्क लेते हैं? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मेरी शिकायत ले लो. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "नमस्ते, ऑर्डर ORD1255 की सेवा भयानक थी। कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे एक एजेंट से जोड़ें। अब।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: कृपया इसे उपहार में लपेटें।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया बैग के लिए डिलिवरी लागत?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "डिस्काउंट कोड OFF31 एक त्रुटि दिखा रहा है। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपना पासवर्ड भूल गया। अब।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या घड़ी उपलब्ध होने पर आप मुझे सूचित कर सकते हैं? यथाशीघ्र।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं इस आइटम को स्वैप करना चाहता हूं.", "intent": "exchange_product", "lang": "hi"}
+{"text": "कृपया उपहार लपेटने की लागत?", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं यह छूट लागू क्यों नहीं कर सकता?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे अब लैपटॉप की आवश्यकता नहीं है, रद्द करें। धन्यवाद।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि थोक मूल्य निर्धारण कैसे प्राप्त करें? धन्यवाद।", "intent": "bulk_order", "lang": "hi"}
+{"text": "नमस्ते, ऑर्डर ORD2114 कब आएगा? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "वारंटी में क्या शामिल है?", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं अपना हालिया ऑर्डर बदल सकता हूं? कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, क्या मैं जयपुर का शिपिंग पता बदल सकता हूँ?", "intent": "change_address", "lang": "hi"}
+{"text": "मुझे अभी तक अपना रिफंड नहीं मिला है.", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरी डिलीवरी पर कोई अपडेट है? अब।", "intent": "track_order", "lang": "hi"}
+{"text": "आप कितने बजे तक खुले हैं?", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि अपेक्षित डिलीवरी कब है?", "intent": "delivery_time", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपना कूपन OFF30 लागू करना भूल गया। अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपना डिलीवरी पता बदलना चाहता हूं। अब।", "intent": "change_address", "lang": "hi"}
+{"text": "मैं अपने खाते में लॉग इन नहीं कर सकता. धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, मुझे डिलीवरी से संबंधित एक समस्या की रिपोर्ट करनी है।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैंने अपना मन बदल लिया, ऑर्डर ORD7143 रद्द कर दिया। कृपया।", "intent": "cancel_order", "lang": "hi"}
+{"text": "क्या आप वर्तमान में खुले हैं? धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "कृपया मैं अपने खाते में लॉग इन नहीं कर सकता। धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, मुझे स्टॉक में मौजूद मोबाइल दिखाओ। अब।", "intent": "product_availability", "lang": "hi"}
+{"text": "नमस्ते, मुझे मेरे कुर्ते के लिए ट्रैकिंग लिंक दें। कृपया।", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं अपना डिलीवरी पता बदलना चाहता हूं।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे मैनेजर से बात करनी होगी।", "intent": "human_escalate", "lang": "hi"}
+{"text": "सूरत कितने दिन में पहुंचानी है? धन्यवाद।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मैं अपना हालिया ऑर्डर बदल सकता हूं? कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "क्या शारीरिक क्षति वारंटी के अंतर्गत आती है? यथाशीघ्र।", "intent": "warranty_info", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे सहायक स्टाफ तक पहुंचाएं। धन्यवाद।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं ऑर्डर ORD7648 को संशोधित करना चाहता हूं।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, मुझे मेरे मोबाइल के लिए ट्रैकिंग लिंक दें। धन्यवाद।", "intent": "track_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि आप कितने बजे तक खुले हैं? धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मुझे डिलीवरी से जुड़ी किसी समस्या की रिपोर्ट करनी होगी। धन्यवाद।", "intent": "complaint_register", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि ORD3417 के लिए शिपमेंट रोकें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं मुझे मेरे मोबाइल के लिए ट्रैकिंग लिंक दें। यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या मैं अगले सप्ताह खरीदी गई जीन्स वापस कर सकता हूँ? कृपया।", "intent": "return_product", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कृपया मेरा रिफंड जमा करें। अब।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे संचालन का समय बताएं। अब।", "intent": "store_hours", "lang": "hi"}
+{"text": "नमस्ते, ऑर्डर ORD9262 के लिए मेरा कार्ट अपडेट करें।", "intent": "order_modify", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मैं जूतों पर कूपन लगा सकता हूँ?", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि इसे लपेटकर पुणे भेज दें।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मैं ऑर्डर ORD9604 को संशोधित करना चाहता हूं।", "intent": "order_modify", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि डिलीवरी पता कैसे संपादित करें? अब।", "intent": "change_address", "lang": "hi"}
+{"text": "नमस्ते, क्या एक्सप्रेस डिलीवरी उपलब्ध है?", "intent": "delivery_time", "lang": "hi"}
+{"text": "मैं ऑर्डर ORD1772 कैसे वापस कर सकता हूँ? धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "नमस्ते, मेरे ऑर्डर ORD7915 की स्थिति क्या है? अब।", "intent": "track_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं घड़ी वापस भेजना चाहता हूं।", "intent": "return_product", "lang": "hi"}
+{"text": "मुझे वारंटी शर्तों के बारे में बताएं. अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे स्टॉक में उपलब्ध परफ्यूम दिखाओ। धन्यवाद।", "intent": "product_availability", "lang": "hi"}
+{"text": "अत्यावश्यक: मानवीय हस्तक्षेप की आवश्यकता है। धन्यवाद।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे एक एजेंट से जोड़ें।", "intent": "human_escalate", "lang": "hi"}
+{"text": "अत्यावश्यक: कूपन OFF23 अमान्य कहता है। यथाशीघ्र।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि अपेक्षित डिलीवरी कब है? कृपया।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मुझे मैनेजर से बात करनी है. यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं विनिमय नीति जानना चाहता हूँ? कृपया।", "intent": "exchange_product", "lang": "hi"}
+{"text": "कूपन OFF22 अमान्य कहता है।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे यह कुर्ता चाहिए। क्या यह उपलब्ध है?", "intent": "product_availability", "lang": "hi"}
+{"text": "नमस्ते, क्या शारीरिक क्षति वारंटी के अंतर्गत आती है? यथाशीघ्र।", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया गारंटी का दावा कैसे करें?", "intent": "warranty_info", "lang": "hi"}
+{"text": "नमस्ते, मेरा ऑर्डर वापस करने के लिए पिकअप शेड्यूल करें। कृपया।", "intent": "return_product", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि क्या मुझे बैग पर मुफ्त डिलीवरी मिल सकती है?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: डिलीवरी स्थान को संशोधित करें। अब।", "intent": "change_address", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि उत्पाद पर एक टिप्पणी छोड़ें।", "intent": "product_review", "lang": "hi"}
+{"text": "मुझे मैनेजर से बात करनी है.", "intent": "human_escalate", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा खाता पुनर्प्राप्त करने में मेरी सहायता करें।", "intent": "account_login", "lang": "hi"}
+{"text": "आप कितने बजे तक खुले हैं? धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "कृपया मैं इस मोबाइल की समीक्षा कैसे करूँ? धन्यवाद।", "intent": "product_review", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या आप इस इत्र को उपहार के रूप में लपेट सकते हैं?", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मुझे लॉगिन करने के लिए ओटीपी नहीं मिल रहा है। धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या आप मेरा ऑर्डर ट्रैक कर सकते हैं?", "intent": "track_order", "lang": "hi"}
+{"text": "अत्यावश्यक: बैग स्टॉक में कब वापस आएगा? धन्यवाद।", "intent": "product_availability", "lang": "hi"}
+{"text": "कृपया मैं यह साड़ी बदलना चाहती हूँ। कृपया।", "intent": "exchange_product", "lang": "hi"}
+{"text": "अत्यावश्यक: ORD8651 के लिए शिपमेंट रोकें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं एक शिकायत दर्ज करना चाहता हूँ। यथाशीघ्र।", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया इसे पुणे में वितरित करें। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "मेरा लॉगिन विफल हो रहा है. अब।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, मैं परफ्यूम से बहुत निराश हूँ।", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: मुझे सहायक स्टाफ में शामिल करें। यथाशीघ्र।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मानवीय हस्तक्षेप आवश्यक है।", "intent": "human_escalate", "lang": "hi"}
+{"text": "मैं एक्सचेंज के लिए कैसे आवेदन करूं?", "intent": "exchange_product", "lang": "hi"}
+{"text": "कृपया परफ्यूम फिट नहीं है, एक्सचेंज चाहिए। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "मुझे यह साड़ी चाहिए. क्या यह उपलब्ध है? कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "लैपटॉप फिट नहीं है, एक्सचेंज चाहिए। धन्यवाद।", "intent": "exchange_product", "lang": "hi"}
+{"text": "अत्यावश्यक: यह साड़ी ख़राब है, मुझे वापसी चाहिए। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "कृपया क्या चेन्नई शाखा रविवार को खुली है? धन्यवाद।", "intent": "store_hours", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मैं ऑर्डर ORD8866 को संशोधित करना चाहता हूं।", "intent": "order_modify", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या आप जांच सकते हैं कि मेरा भुगतान हुआ या नहीं?", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया ऑर्डर ORD3806 से साड़ी हटा दें। यथाशीघ्र।", "intent": "order_modify", "lang": "hi"}
+{"text": "नमस्ते, क्या आप टी-शर्ट उपलब्ध होने पर मुझे सूचित कर सकते हैं? धन्यवाद।", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि OFF40 मेरे कार्ट पर लागू क्यों नहीं हो रहा है? कृपया।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "कृपया आइटम क्षतिग्रस्त है, मुझे इसे वापस करना होगा। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "मुझे एक औपचारिक शिकायत करनी है. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "कृपया मैं 21 जूते ऑर्डर करना चाहता हूँ। कृपया।", "intent": "bulk_order", "lang": "hi"}
+{"text": "कृपया कृपया मेरा रिफंड क्रेडिट करें। अब।", "intent": "refund_status", "lang": "hi"}
+{"text": "रिफंड की प्रक्रिया कितने दिनों में पूरी होगी? कृपया।", "intent": "refund_status", "lang": "hi"}
+{"text": "बैग मेरे नये पते पर भेज दो।", "intent": "change_address", "lang": "hi"}
+{"text": "मैं अपने द्वारा खरीदी गई वस्तुओं को बदलना चाहता हूं। धन्यवाद।", "intent": "order_modify", "lang": "hi"}
+{"text": "कृपया लैपटॉप के लिए मेरी डिलीवरी निरस्त करें। यथाशीघ्र।", "intent": "cancel_order", "lang": "hi"}
+{"text": "अर्जेंट: मैं यह कुर्ता वापस करना चाहता हूं। धन्यवाद।", "intent": "return_product", "lang": "hi"}
+{"text": "रिफंड की प्रक्रिया कितने दिनों में पूरी होगी? यथाशीघ्र।", "intent": "refund_status", "lang": "hi"}
+{"text": "मैंने अपना मन बदल लिया, ऑर्डर ORD4500 रद्द कर दिया। यथाशीघ्र।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं ऑर्डर ORD7511 कैसे वापस कर सकता हूँ? यथाशीघ्र।", "intent": "return_product", "lang": "hi"}
+{"text": "कृपया मैं इत्र की उपलब्धता जानना चाहता हूँ। कृपया।", "intent": "product_availability", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैंने जो जींस खरीदी है उसे रद्द कर दें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "कृपया बैग के लिए कितने महीने की वारंटी?", "intent": "warranty_info", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि क्या वारंटी कोलकाता में वैध है? कृपया।", "intent": "warranty_info", "lang": "hi"}
+{"text": "नमस्ते, मैं 5 स्टार देना चाहता हूँ।", "intent": "product_review", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरी डिलीवरी पर कोई अपडेट? यथाशीघ्र।", "intent": "track_order", "lang": "hi"}
+{"text": "क्या आप मुझे हैदराबाद में कूरियर के बारे में शिकायत बता सकते हैं। कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "अत्यावश्यक: मेरा ऑर्डर वापस करने के लिए पिकअप शेड्यूल करें। यथाशीघ्र।", "intent": "return_product", "lang": "hi"}
+{"text": "अत्यावश्यक: शिपिंग शुल्क क्या हैं? अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या मैं ऑर्डर ORD1018 की विशेषताओं को बदल सकता हूँ? कृपया।", "intent": "order_modify", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मैं आकार 10 को दूसरे आकार से बदल सकता हूँ?", "intent": "exchange_product", "lang": "hi"}
+{"text": "कृपया क्या वारंटी अहमदाबाद में वैध है? अब।", "intent": "warranty_info", "lang": "hi"}
+{"text": "नमस्ते, मैं अपना पासवर्ड भूल गया। कृपया।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, वारंटी में क्या शामिल है? यथाशीघ्र।", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया क्या मुझे ग्राहक सेवा प्रतिनिधि मिल सकता है? कृपया।", "intent": "human_escalate", "lang": "hi"}
+{"text": "एक उपहार संदेश जोड़ें.", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "कृपया मुंबई में समय स्टोर करें?", "intent": "store_hours", "lang": "hi"}
+{"text": "मुझे थोक में बैग ऑर्डर करना होगा.", "intent": "bulk_order", "lang": "hi"}
+{"text": "अत्यावश्यक: क्या मैं थोक में खरीद सकता हूँ? अब।", "intent": "bulk_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं जींस से बहुत निराश हूं।", "intent": "complaint_register", "lang": "hi"}
+{"text": "इस घड़ी की वारंटी क्या है? कृपया।", "intent": "warranty_info", "lang": "hi"}
+{"text": "कृपया मैं एक शिकायत दर्ज करना चाहता हूँ. कृपया।", "intent": "complaint_register", "lang": "hi"}
+{"text": "मैंने अपना मन बदल लिया, ऑर्डर ORD4491 रद्द कर दिया। कृपया।", "intent": "cancel_order", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं यह छूट क्यों लागू नहीं कर सकता? अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं क्या मैं इसे 15 अगस्त को डिलीवर करवा सकता हूँ? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं अपना डिलीवरी पता बदलना चाहता हूं। धन्यवाद।", "intent": "change_address", "lang": "hi"}
+{"text": "कृपया मैं अपने द्वारा खरीदी गई वस्तुओं को बदलना चाहता हूं। धन्यवाद।", "intent": "order_modify", "lang": "hi"}
+{"text": "अत्यावश्यक: आप डिलीवरी के लिए शुल्क क्यों ले रहे हैं?", "intent": "shipping_cost", "lang": "hi"}
+{"text": "अत्यावश्यक: मैं अपना डिलीवरी पता बदलना चाहता हूं। कृपया।", "intent": "change_address", "lang": "hi"}
+{"text": "क्या आप मुझे बता सकते हैं कि मैं अपने खाते में लॉग इन नहीं कर सकता। धन्यवाद।", "intent": "account_login", "lang": "hi"}
+{"text": "नमस्ते, मुझे यह साड़ी चाहिए। क्या यह उपलब्ध है?", "intent": "product_availability", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मेरा खाता लॉक हो गया है।", "intent": "account_login", "lang": "hi"}
+{"text": "ORD2094 के लिए शिपमेंट रोकें। अब।", "intent": "cancel_order", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि मुझे स्टॉक में जींस दिखाओ।", "intent": "product_availability", "lang": "hi"}
+{"text": "घड़ी की डिलीवरी का समय? अब।", "intent": "delivery_time", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि शिपिंग शुल्क बहुत अधिक है। अब।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "इसे लपेटकर दिल्ली भेज दो। धन्यवाद।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "मेरे हालिया लेनदेन के साथ भुगतान संबंधी समस्या। कृपया।", "intent": "payment_issue", "lang": "hi"}
+{"text": "कृपया मुझे ऑर्डर ORD8600 के लिए उपहार पैकेजिंग चाहिए। अब।", "intent": "gift_wrapping", "lang": "hi"}
+{"text": "नमस्ते, क्या मैं जूतों पर कूपन लगा सकता हूँ? अब।", "intent": "coupon_apply", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि शिपिंग शुल्क बहुत अधिक है। कृपया।", "intent": "shipping_cost", "lang": "hi"}
+{"text": "मैं जानना चाहता हूं कि टी-शर्ट पर कितने महीने की वारंटी है? धन्यवाद।", "intent": "warranty_info", "lang": "hi"}

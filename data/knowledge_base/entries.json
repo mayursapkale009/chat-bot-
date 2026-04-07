@@ -1,0 +1,416 @@
+{
+  "domain": "General Multilingual Assistant",
+  "intents": [
+    {
+      "intent": "greeting",
+      "description": "User says hello/hi/namaste",
+      "responses": {
+        "en": ["Hello! I'm your multilingual assistant. I can help you in Hindi, Bengali, Marathi, Tamil, Telugu, Kannada, and English. How can I help you today?", "Hi there! What can I do for you?"],
+        "hi": ["नमस्ते! मैं आपका बहुभाषी सहायक हूँ। मैं हिंदी, बांग्ला, मराठी, तमिल, तेलुगु, कन्नड़ और अंग्रेजी में मदद कर सकता हूँ। आज मैं आपकी कैसे मदद कर सकता हूँ?", "हैलो! बताइए, क्या सहायता चाहिए?"],
+        "bn": ["নমস্কার! আমি আপনার বহুভাষী সহকারী। আমি কিভাবে আপনাকে সাহায্য করতে পারি?", "হ্যালো! বলুন, কিসে সাহায্য করতে পারি?"],
+        "mr": ["नमस्कार! मी तुमचा बहुभाषिक सहाय्यक आहे. मी तुम्हाला कशी मदत करू शकतो?", "हॅलो! सांगा, काय मदत करू?"],
+        "ta": ["வணக்கம்! நான் உங்கள் பன்மொழி உதவியாளர். நான் உங்களுக்கு எப்படி உதவ முடியும்?"],
+        "te": ["నమస్కారం! నేను మీ బహుభాషా సహాయకుడిని. నేను మీకు ఎలా సహాయం చేయగలను?"],
+        "kn": ["ನಮಸ್ಕಾರ! ನಾನು ನಿಮ್ಮ ಬಹುಭಾಷಾ ಸಹಾಯಕ. ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?"]
+      },
+      "examples": {
+        "en": ["Hello", "Hi", "Hey", "Good morning", "Good evening"],
+        "hi": ["नमस्ते", "हैलो", "प्रणाम", "शुभ प्रभात", "हाय"],
+        "bn": ["নমস্কার", "হ্যালো", "শুভ সকাল", "হাই"],
+        "mr": ["नमस्कार", "हॅलो", "शुभ प्रभात"],
+        "ta": ["வணக்கம்", "ஹலோ"],
+        "te": ["నమస్కారం", "హలో"],
+        "kn": ["ನಮಸ್ಕಾರ", "ಹಲೋ"]
+      }
+    },
+    {
+      "intent": "farewell",
+      "description": "User says goodbye",
+      "responses": {
+        "en": ["Goodbye! Have a great day!", "Bye! Feel free to come back anytime."],
+        "hi": ["अलविदा! आपका दिन शुभ हो!", "बाय! कभी भी वापस आइए।"],
+        "bn": ["বিদায়! আপনার দিন শুভ হোক!", "বাই! যেকোনো সময় ফিরে আসবেন।"],
+        "mr": ["निरोप! तुमचा दिवस चांगला जाओ!", "बाय! कधीही परत या।"],
+        "ta": ["பிரியாவிடை! நல்ல நாளாக அமையட்டும்!"],
+        "te": ["వీడ్కోలు! మీ రోజు శుభంగా ఉండాలి!"],
+        "kn": ["ವಿದಾಯ! ನಿಮ್ಮ ದಿನ ಶುಭವಾಗಿರಲಿ!"]
+      },
+      "examples": {
+        "en": ["Bye", "Goodbye", "See you", "Take care"],
+        "hi": ["अलविदा", "बाय", "फिर मिलेंगे", "चलते हैं"],
+        "bn": ["বিদায়", "বাই", "আবার দেখা হবে"],
+        "mr": ["निरोप", "बाय", "पुन्हा भेटू"],
+        "ta": ["பிரியாவிடை", "பை"],
+        "te": ["వీడ్కోలు", "బై"],
+        "kn": ["ವಿದಾಯ", "ಬೈ"]
+      }
+    },
+    {
+      "intent": "thanks",
+      "description": "User says thank you",
+      "responses": {
+        "en": ["You're welcome! Happy to help.", "No problem! Let me know if you need anything else."],
+        "hi": ["आपका स्वागत है! मदद करके खुशी हुई।", "कोई बात नहीं! और कुछ चाहिए तो बताइए।"],
+        "bn": ["স্বাগতম! সাহায্য করতে পেরে আনন্দিত।", "কোনো সমস্যা নেই! আর কিছু লাগলে বলবেন।"],
+        "mr": ["आपले स्वागत आहे! मदत करून आनंद झाला.", "काही हरकत नाही! आणखी काही हवे असल्यास सांगा।"],
+        "ta": ["நன்றி! உதவி செய்ய மகிழ்ச்சி."],
+        "te": ["స్వాగతం! సహాయం చేయడం సంతోషం."],
+        "kn": ["ಸ್ವಾಗತ! ಸಹಾಯ ಮಾಡಲು ಸಂತೋಷವಾಗಿದೆ."]
+      },
+      "examples": {
+        "en": ["Thank you", "Thanks", "Thanks a lot", "Appreciate it"],
+        "hi": ["धन्यवाद", "शुक्रिया", "बहुत बहुत धन्यवाद", "थैंक्स"],
+        "bn": ["ধন্যবাদ", "অনেক ধন্যবাদ", "থ্যাঙ্কস"],
+        "mr": ["धन्यवाद", "आभार", "थँक्स"],
+        "ta": ["நன்றி", "மிக்க நன்றி"],
+        "te": ["ధన్యవాదాలు", "థాంక్స్"],
+        "kn": ["ಧನ್ಯವಾದ", "ಥ್ಯಾಂಕ್ಸ್"]
+      }
+    },
+    {
+      "intent": "ask_name",
+      "description": "User asks bot's name or identity",
+      "responses": {
+        "en": ["I'm a Multilingual Indian Language Chatbot, created as a research project. You can call me your language assistant!"],
+        "hi": ["मैं एक बहुभाषी भारतीय भाषा चैटबॉट हूँ, एक शोध परियोजना के रूप में बनाया गया। आप मुझे अपना भाषा सहायक कह सकते हैं!"],
+        "bn": ["আমি একটি বহুভাষী ভারতীয় ভাষার চ্যাটবট, একটি গবেষণা প্রকল্প হিসেবে তৈরি।"],
+        "mr": ["मी एक बहुभाषिक भारतीय भाषा चॅटबॉट आहे, संशोधन प्रकल्प म्हणून तयार केलेले."],
+        "ta": ["நான் ஒரு பன்மொழி இந்திய மொழி சாட்பாட், ஆராய்ச்சி திட்டமாக உருவாக்கப்பட்டது."],
+        "te": ["నేను ఒక బహుభాషా భారతీయ భాషా చాట్‌బాట్, పరిశోధన ప్రాజెక్ట్ గా రూపొందించబడింది."],
+        "kn": ["ನಾನು ಬಹುಭಾಷಾ ಭಾರತೀಯ ಭಾಷಾ ಚಾಟ್‌ಬಾಟ್, ಸಂಶೋಧನಾ ಯೋಜನೆಯಾಗಿ ರಚಿಸಲಾಗಿದೆ."]
+      },
+      "examples": {
+        "en": ["What is your name?", "Who are you?", "Tell me about yourself"],
+        "hi": ["तुम्हारा नाम क्या है?", "तुम कौन हो?", "अपने बारे में बताओ"],
+        "bn": ["তোমার নাম কি?", "তুমি কে?"],
+        "mr": ["तुझे नाव काय?", "तू कोण आहेस?"],
+        "ta": ["உங்கள் பெயர் என்ன?", "நீங்கள் யார்?"],
+        "te": ["మీ పేరు ఏమిటి?", "మీరు ఎవరు?"],
+        "kn": ["ನಿಮ್ಮ ಹೆಸರೇನು?", "ನೀವು ಯಾರು?"]
+      }
+    },
+    {
+      "intent": "ask_help",
+      "description": "User asks what the bot can do",
+      "responses": {
+        "en": ["I can help you with:\n🌐 Conversations in 7 languages (Hindi, Bengali, Marathi, Tamil, Telugu, Kannada, English)\n🔄 Translation between Indian languages\n📚 General knowledge questions\n🧮 Simple math calculations\n📖 Word meanings and definitions\n😂 Jokes and fun facts\n💬 Casual conversation\n\nJust type in any Indian language and I'll respond!"],
+        "hi": ["मैं इन चीज़ों में मदद कर सकता हूँ:\n🌐 7 भाषाओं में बातचीत\n🔄 भारतीय भाषाओं में अनुवाद\n📚 सामान्य ज्ञान\n🧮 गणित के सवाल\n📖 शब्दों के अर्थ\n😂 चुटकुले\n💬 सामान्य बातचीत\n\nकिसी भी भारतीय भाषा में टाइप करें!"],
+        "bn": ["আমি এসব বিষয়ে সাহায্য করতে পারি:\n🌐 ৭টি ভাষায় কথোপকথন\n🔄 ভারতীয় ভাষায় অনুবাদ\n📚 সাধারণ জ্ঞান\n🧮 গণিত\n😂 কৌতুক"],
+        "mr": ["मी या गोष्टींमध्ये मदत करू शकतो:\n🌐 ७ भाषांमध्ये संवाद\n🔄 भारतीय भाषांमध्ये अनुवाद\n📚 सामान्य ज्ञान\n🧮 गणित\n😂 विनोद"],
+        "ta": ["நான் இவற்றில் உதவ முடியும்:\n🌐 7 மொழிகளில் உரையாடல்\n🔄 மொழிபெயர்ப்பு\n📚 பொது அறிவு\n🧮 கணிதம்\n😂 நகைச்சுவை"],
+        "te": ["నేను ఈ విషయాలలో సహాయం చేయగలను:\n🌐 7 భాషలలో సంభాషణ\n🔄 అనువాదం\n📚 సాధారణ జ్ఞానం\n🧮 గణితం\n😂 జోకులు"],
+        "kn": ["ನಾನು ಈ ವಿಷಯಗಳಲ್ಲಿ ಸಹಾಯ ಮಾಡಬಹುದು:\n🌐 7 ಭಾಷೆಗಳಲ್ಲಿ ಸಂಭಾಷಣೆ\n🔄 ಅನುವಾದ\n📚 ಸಾಮಾನ್ಯ ಜ್ಞಾನ\n🧮 ಗಣಿತ\n😂 ಹಾಸ್ಯ"]
+      },
+      "examples": {
+        "en": ["What can you do?", "Help me", "What are your features?", "How can you help?"],
+        "hi": ["तुम क्या कर सकते हो?", "मदद करो", "तुम्हारे फीचर्स क्या हैं?"],
+        "bn": ["তুমি কি করতে পারো?", "সাহায্য করো"],
+        "mr": ["तू काय करू शकतोस?", "मदत कर"],
+        "ta": ["நீங்கள் என்ன செய்ய முடியும்?"],
+        "te": ["మీరు ఏమి చేయగలరు?"],
+        "kn": ["ನೀವು ಏನು ಮಾಡಬಹುದು?"]
+      }
+    },
+    {
+      "intent": "language_change",
+      "description": "User wants to switch conversation language",
+      "responses": {
+        "en": ["Sure! I'll switch to your preferred language. Just type in the language you'd like to use and I'll respond accordingly."],
+        "hi": ["ज़रूर! मैं आपकी पसंदीदा भाषा में बात करूँगा। बस उस भाषा में टाइप करें।"],
+        "bn": ["অবশ্যই! আপনার পছন্দের ভাষায় টাইপ করুন, আমি সেই ভাষায় উত্তর দেব।"],
+        "mr": ["नक्कीच! तुमच्या आवडीच्या भाषेत टाइप करा, मी त्या भाषेत उत्तर देईन."],
+        "ta": ["நிச்சயமாக! உங்கள் விருப்பமான மொழியில் தட்டச்சு செய்யுங்கள்."],
+        "te": ["తప్పకుండా! మీ ఇష్టమైన భాషలో టైప్ చేయండి."],
+        "kn": ["ಖಂಡಿತ! ನಿಮ್ಮ ಆಯ್ಕೆಯ ಭಾಷೆಯಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ."]
+      },
+      "examples": {
+        "en": ["Switch to Hindi", "Talk in Bengali", "Change language", "Speak in Tamil"],
+        "hi": ["हिंदी में बात करो", "अंग्रेजी में बोलो", "भाषा बदलो"],
+        "bn": ["বাংলায় বলো", "ভাষা বদলাও"],
+        "mr": ["मराठीत बोल", "भाषा बदला"],
+        "ta": ["தமிழில் பேசு"],
+        "te": ["తెలుగులో మాట్లాడు"],
+        "kn": ["ಕನ್ನಡದಲ್ಲಿ ಮಾತಾಡು"]
+      }
+    },
+    {
+      "intent": "general_knowledge",
+      "description": "User asks a factual/knowledge question",
+      "dynamic": true,
+      "handler": "ollama_generate",
+      "responses": {
+        "en": ["Let me answer that for you."],
+        "hi": ["मैं आपको इसका जवाब देता हूँ।"]
+      },
+      "examples": {
+        "en": ["What is the capital of India?", "Who invented the telephone?", "How many planets are there?"],
+        "hi": ["भारत की राजधानी क्या है?", "टेलीफोन किसने बनाया?", "सूर्यमंडल में कितने ग्रह हैं?", "गंगा नदी कहाँ से निकलती है?"],
+        "bn": ["ভারতের রাজধানী কি?", "টেলিফোন কে আবিষ্কার করেছিলেন?"],
+        "mr": ["भारताची राजधानी कोणती?", "टेलिफोनचा शोध कोणी लावला?"],
+        "ta": ["இந்தியாவின் தலைநகரம் என்ன?"],
+        "te": ["భారతదేశ రాజధాని ఏమిటి?"],
+        "kn": ["ಭಾರತದ ರಾಜಧಾನಿ ಯಾವುದು?"]
+      }
+    },
+    {
+      "intent": "weather",
+      "description": "User asks about weather",
+      "responses": {
+        "en": ["I don't have access to real-time weather data, but I suggest checking a weather app or website for your area. You can try weather.com or Google Weather!"],
+        "hi": ["मेरे पास वास्तविक समय का मौसम डेटा नहीं है, लेकिन आप अपने क्षेत्र के लिए मौसम ऐप या Google Weather देख सकते हैं!"],
+        "bn": ["আমার কাছে রিয়েল-টাইম আবহাওয়ার তথ্য নেই, তবে আপনি Google Weather দেখতে পারেন!"],
+        "mr": ["माझ्याकडे रिअल-टाइम हवामान डेटा नाही, पण तुम्ही Google Weather पाहू शकता!"],
+        "ta": ["நிகழ்நேர வானிலை தகவல் என்னிடம் இல்லை, ஆனால் Google Weather பாருங்கள்!"],
+        "te": ["నా దగ్గర రియల్-టైమ్ వాతావరణ డేటా లేదు, కానీ Google Weather చూడండి!"],
+        "kn": ["ನನ್ನ ಬಳಿ ನೈಜ-ಸಮಯದ ಹವಾಮಾನ ಡೇಟಾ ಇಲ್ಲ, ಆದರೆ Google Weather ನೋಡಿ!"]
+      },
+      "examples": {
+        "en": ["What's the weather today?", "Is it going to rain?", "How's the weather?"],
+        "hi": ["आज मौसम कैसा है?", "बारिश होगी क्या?", "आज का तापमान क्या है?"],
+        "bn": ["আজকের আবহাওয়া কেমন?", "বৃষ্টি হবে কি?"],
+        "mr": ["आज हवामान कसे आहे?", "पाऊस पडेल का?"],
+        "ta": ["இன்று வானிலை எப்படி?"],
+        "te": ["ఈరోజు వాతావరణం ఎలా ఉంది?"],
+        "kn": ["ಇಂದು ಹವಾಮಾನ ಹೇಗಿದೆ?"]
+      }
+    },
+    {
+      "intent": "time_date",
+      "description": "User asks about time or date",
+      "dynamic": true,
+      "handler": "get_time_date",
+      "responses": {
+        "en": ["Let me check the current time and date for you."],
+        "hi": ["मैं आपको वर्तमान समय और तारीख बताता हूँ।"]
+      },
+      "examples": {
+        "en": ["What time is it?", "What's today's date?", "What day is it?"],
+        "hi": ["अभी कितने बज रहे हैं?", "आज की तारीख क्या है?", "आज कौन सा दिन है?"],
+        "bn": ["এখন কটা বাজে?", "আজকের তারিখ কত?"],
+        "mr": ["आता किती वाजले?", "आजची तारीख काय आहे?"],
+        "ta": ["இப்போது என்ன நேரம்?", "இன்று என்ன தேதி?"],
+        "te": ["ఇప్పుడు ఎన్ని గంటలు?", "ఈరోజు తేదీ ఏమిటి?"],
+        "kn": ["ಈಗ ಎಷ್ಟು ಗಂಟೆ?", "ಇಂದಿನ ದಿನಾಂಕ ಏನು?"]
+      }
+    },
+    {
+      "intent": "translation_request",
+      "description": "User wants text translated between languages",
+      "dynamic": true,
+      "handler": "translate_text",
+      "responses": {
+        "en": ["I'll translate that for you!"],
+        "hi": ["मैं आपके लिए अनुवाद करता हूँ!"]
+      },
+      "examples": {
+        "en": ["Translate to Hindi", "Say this in Tamil", "What is this in Bengali?", "How do you say hello in Marathi?"],
+        "hi": ["इसे अंग्रेजी में बताओ", "तमिल में अनुवाद करो", "इसका बांग्ला क्या होगा?"],
+        "bn": ["এটা হিন্দিতে বলো", "ইংরেজিতে অনুবাদ করো"],
+        "mr": ["हे हिंदीत सांग", "इंग्रजीत अनुवाद कर"],
+        "ta": ["இதை ஹிந்தியில் சொல்லுங்கள்"],
+        "te": ["దీన్ని హిందీలో చెప్పండి"],
+        "kn": ["ಇದನ್ನು ಹಿಂದಿಯಲ್ಲಿ ಹೇಳಿ"]
+      }
+    },
+    {
+      "intent": "joke",
+      "description": "User asks for a joke or humor",
+      "dynamic": true,
+      "handler": "ollama_generate",
+      "responses": {
+        "en": ["Here's one for you! 😄"],
+        "hi": ["सुनिए एक मज़ेदार चुटकुला! 😄"]
+      },
+      "examples": {
+        "en": ["Tell me a joke", "Make me laugh", "Something funny"],
+        "hi": ["एक चुटकुला सुनाओ", "कुछ मज़ेदार बताओ", "हँसाओ"],
+        "bn": ["একটা জোক বলো", "হাসাও"],
+        "mr": ["एक विनोद सांग", "हसव"],
+        "ta": ["ஒரு ஜோக் சொல்லுங்கள்"],
+        "te": ["ఒక జోక్ చెప్పండి"],
+        "kn": ["ಒಂದು ಜೋಕ್ ಹೇಳಿ"]
+      }
+    },
+    {
+      "intent": "news",
+      "description": "User asks about current news",
+      "responses": {
+        "en": ["I don't have access to real-time news. For the latest updates, please check news websites like NDTV, BBC Hindi, or Aaj Tak."],
+        "hi": ["मेरे पास लाइव समाचार नहीं हैं। ताज़ा खबरों के लिए NDTV, BBC हिंदी, या आज तक देखें।"],
+        "bn": ["আমার কাছে লাইভ সংবাদ নেই। তাজা খবরের জন্য NDTV, BBC বাংলা দেখুন।"],
+        "mr": ["माझ्याकडे लाइव्ह बातम्या नाहीत. ताज्या बातम्यांसाठी NDTV मराठी पहा."],
+        "ta": ["நிகழ்நேர செய்திகள் என்னிடம் இல்லை. NDTV Tamil பாருங்கள்."],
+        "te": ["నా దగ్గర లైవ్ న్యూస్ లేదు. NDTV Telugu చూడండి."],
+        "kn": ["ನನ್ನ ಬಳಿ ಲೈವ್ ಸುದ್ದಿ ಇಲ್ಲ. NDTV Kannada ನೋಡಿ."]
+      },
+      "examples": {
+        "en": ["What's the latest news?", "Any news today?", "Tell me the news"],
+        "hi": ["आज की खबर क्या है?", "ताज़ा समाचार बताओ"],
+        "bn": ["আজকের খবর কি?", "তাজা সংবাদ বলো"],
+        "mr": ["आजच्या बातम्या काय?"],
+        "ta": ["இன்றைய செய்திகள் என்ன?"],
+        "te": ["ఈరోజు వార్తలు ఏమిటి?"],
+        "kn": ["ಇಂದಿನ ಸುದ್ದಿ ಏನು?"]
+      }
+    },
+    {
+      "intent": "math_calculation",
+      "description": "User asks a math question",
+      "dynamic": true,
+      "handler": "ollama_generate",
+      "responses": {
+        "en": ["Let me calculate that for you."],
+        "hi": ["मैं हिसाब लगाता हूँ।"]
+      },
+      "examples": {
+        "en": ["What is 25 times 4?", "Calculate 100 divided by 5", "What is 15% of 200?"],
+        "hi": ["25 गुणा 4 कितना होता है?", "100 भाग 5 कितना है?", "200 का 15 प्रतिशत कितना है?"],
+        "bn": ["25 গুণ 4 কত?", "100 ভাগ 5 কত?"],
+        "mr": ["25 गुणिले 4 किती?"],
+        "ta": ["25 பெருக்கல் 4 என்ன?"],
+        "te": ["25 సార్లు 4 ఎంత?"],
+        "kn": ["25 ಗುಣಿಸಿ 4 ಎಷ್ಟು?"]
+      }
+    },
+    {
+      "intent": "dictionary",
+      "description": "User asks for word meaning or definition",
+      "dynamic": true,
+      "handler": "ollama_generate",
+      "responses": {
+        "en": ["Let me look up that word for you."],
+        "hi": ["मैं इस शब्द का अर्थ बताता हूँ।"]
+      },
+      "examples": {
+        "en": ["What does democracy mean?", "Define photosynthesis", "Meaning of love"],
+        "hi": ["लोकतंत्र का अर्थ क्या है?", "इस शब्द का मतलब बताओ", "प्रकाश संश्लेषण क्या है?"],
+        "bn": ["গণতন্ত্র মানে কি?", "এই শব্দের অর্থ কি?"],
+        "mr": ["लोकशाहीचा अर्थ काय?"],
+        "ta": ["ஜனநாயகம் என்றால் என்ன?"],
+        "te": ["ప్రజాస్వామ్యం అంటే ఏమిటి?"],
+        "kn": ["ಪ್ರಜಾಪ್ರಭುತ್ವ ಎಂದರೇನು?"]
+      }
+    },
+    {
+      "intent": "sentiment",
+      "description": "User expresses an emotion or feeling",
+      "dynamic": true,
+      "handler": "ollama_generate",
+      "responses": {
+        "en": ["I understand how you feel. I'm here to help and chat with you!"],
+        "hi": ["मैं समझता हूँ आप कैसा महसूस कर रहे हैं। मैं आपसे बात करने के लिए यहाँ हूँ!"]
+      },
+      "examples": {
+        "en": ["I'm happy today", "I'm feeling sad", "I'm very angry", "I'm bored"],
+        "hi": ["मैं आज खुश हूँ", "मुझे उदासी है", "मैं बहुत गुस्से में हूँ", "बोरियत हो रही है"],
+        "bn": ["আমি আজ খুশি", "আমার মন খারাপ"],
+        "mr": ["मी आज आनंदी आहे", "मला दुःख होतंय"],
+        "ta": ["நான் இன்று மகிழ்ச்சியாக இருக்கிறேன்"],
+        "te": ["నేను ఈరోజు సంతోషంగా ఉన్నాను"],
+        "kn": ["ನಾನು ಇಂದು ಸಂತೋಷವಾಗಿದ್ದೇನೆ"]
+      }
+    },
+    {
+      "intent": "complaint",
+      "description": "User has a complaint or issue",
+      "responses": {
+        "en": ["I'm sorry to hear that. Could you please describe your issue in detail? I'll try my best to help."],
+        "hi": ["यह सुनकर दुख हुआ। कृपया अपनी समस्या विस्तार से बताएं, मैं पूरी कोशिश करूँगा।"],
+        "bn": ["দুঃখিত। অনুগ্রহ করে আপনার সমস্যা বিস্তারিত বলুন।"],
+        "mr": ["हे ऐकून वाईट वाटले. कृपया तुमची समस्या सविस्तर सांगा."],
+        "ta": ["மன்னிக்கவும். உங்கள் பிரச்சனையை விரிவாக சொல்லுங்கள்."],
+        "te": ["క్షమించండి. దయచేసి మీ సమస్యను వివరంగా చెప్పండి."],
+        "kn": ["ಕ್ಷಮಿಸಿ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ವಿವರವಾಗಿ ಹೇಳಿ."]
+      },
+      "examples": {
+        "en": ["I have a complaint", "I want to report a problem", "This is not working"],
+        "hi": ["मुझे शिकायत करनी है", "एक समस्या है", "यह काम नहीं कर रहा"],
+        "bn": ["আমার অভিযোগ আছে", "একটা সমস্যা আছে"],
+        "mr": ["मला तक्रार करायची आहे"],
+        "ta": ["எனக்கு புகார் உள்ளது"],
+        "te": ["నాకు ఫిర్యాదు ఉంది"],
+        "kn": ["ನನಗೆ ದೂರು ಇದೆ"]
+      }
+    },
+    {
+      "intent": "feedback",
+      "description": "User gives feedback or appreciation",
+      "responses": {
+        "en": ["Thank you for your feedback! It helps me improve. 😊"],
+        "hi": ["आपकी प्रतिक्रिया के लिए धन्यवाद! इससे मुझे बेहतर होने में मदद मिलती है। 😊"],
+        "bn": ["আপনার মতামতের জন্য ধন্যবাদ! এটি আমাকে আরও ভালো হতে সাহায্য করে। 😊"],
+        "mr": ["तुमच्या अभिप्रायाबद्दल धन्यवाद! यामुळे मला सुधारण्यास मदत होते. 😊"],
+        "ta": ["உங்கள் கருத்துக்கு நன்றி! இது என்னை மேம்படுத்த உதவுகிறது. 😊"],
+        "te": ["మీ అభిప్రాయానికి ధన్యవాదాలు! ఇది నన్ను మెరుగుపరచడంలో సహాయపడుతుంది. 😊"],
+        "kn": ["ನಿಮ್ಮ ಅಭಿಪ್ರಾಯಕ್ಕೆ ಧನ್ಯವಾದ! ಇದು ನನ್ನನ್ನು ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. 😊"]
+      },
+      "examples": {
+        "en": ["Great job!", "You're doing well", "Good work", "Nice chatbot"],
+        "hi": ["बहुत अच्छा काम कर रहे हो", "अच्छा है", "बढ़िया"],
+        "bn": ["খুব ভালো কাজ", "চমৎকার"],
+        "mr": ["खूप छान काम", "भारी"],
+        "ta": ["நல்ல வேலை", "அருமை"],
+        "te": ["మంచి పని", "బాగుంది"],
+        "kn": ["ಒಳ್ಳೆಯ ಕೆಲಸ", "ಚೆನ್ನಾಗಿದೆ"]
+      }
+    },
+    {
+      "intent": "small_talk",
+      "description": "Casual conversation / chit-chat",
+      "dynamic": true,
+      "handler": "ollama_generate",
+      "responses": {
+        "en": ["I'm doing well, thanks for asking! How about you?"],
+        "hi": ["मैं ठीक हूँ, पूछने के लिए धन्यवाद! आप कैसे हैं?"]
+      },
+      "examples": {
+        "en": ["How are you?", "What's up?", "How's it going?", "What are you doing?"],
+        "hi": ["क्या हाल है?", "कैसे हो?", "क्या चल रहा है?", "तुम क्या कर रहे हो?"],
+        "bn": ["কেমন আছো?", "কি খবর?"],
+        "mr": ["कसे आहात?", "काय चालू आहे?"],
+        "ta": ["எப்படி இருக்கீங்க?", "என்ன நடக்கிறது?"],
+        "te": ["ఎలా ఉన్నారు?", "ఏం జరుగుతోంది?"],
+        "kn": ["ಹೇಗಿದ್ದೀರಿ?", "ಏನು ನಡೆಯುತ್ತಿದೆ?"]
+      }
+    },
+    {
+      "intent": "ask_creator",
+      "description": "User asks who made the bot",
+      "responses": {
+        "en": ["I was created by Vaishali Datta Parihar as part of an M.Tech research project at Anuradha College of Engineering & Technology, Chikhli, under the guidance of Dr. A.S. Kapse. This project explores multilingual AI chatbot technology for Indian languages!"],
+        "hi": ["मुझे वैशाली दत्ता परिहार ने बनाया है। यह अनुराधा कॉलेज ऑफ इंजीनियरिंग एंड टेक्नोलॉजी, चिखली में डॉ. ए.एस. कापसे के मार्गदर्शन में M.Tech शोध परियोजना है। यह परियोजना भारतीय भाषाओं के लिए बहुभाषी AI चैटबॉट तकनीक का अध्ययन करती है!"],
+        "bn": ["আমাকে তৈরি করেছেন বৈশালী দত্ত পরিহার, অনুরাধা কলেজ অফ ইঞ্জিনিয়ারিং, চিখলীতে ডঃ এ.এস. কাপসের তত্ত্বাবধানে M.Tech গবেষণা প্রকল্প হিসেবে।"],
+        "mr": ["मला वैशाली दत्ता परिहार यांनी बनवले आहे. हा अनुराधा कॉलेज ऑफ इंजिनीअरिंग, चिखली येथे डॉ. ए.एस. कापसे यांच्या मार्गदर्शनाखाली M.Tech संशोधन प्रकल्प आहे."],
+        "ta": ["என்னை வைஷாலி தத்தா பரிஹார் உருவாக்கினார், அனுராதா கல்லூரியில் டாக்டர் ஏ.எஸ். காப்சே வழிகாட்டுதலில் M.Tech ஆராய்ச்சி திட்டமாக."],
+        "te": ["నన్ను వైశాలి దత్తా పరిహార్ రూపొందించారు, అనురాధా కళాశాలలో డా. ఏ.ఎస్. కాప్సే మార్గదర్శకత్వంలో M.Tech పరిశోధన ప్రాజెక్ట్ గా."],
+        "kn": ["ನನ್ನನ್ನು ವೈಶಾಲಿ ದತ್ತ ಪರಿಹಾರ್ ರಚಿಸಿದ್ದಾರೆ, ಅನುರಾಧಾ ಎಂಜಿನಿಯರಿಂಗ್ ಕಾಲೇಜಿನಲ್ಲಿ ಡಾ. ಎ.ಎಸ್. ಕಾಪ್ಸೆ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ M.Tech ಸಂಶೋಧನಾ ಯೋಜನೆಯಾಗಿ."]
+      },
+      "examples": {
+        "en": ["Who made you?", "Who created you?", "Who is your developer?", "Who built you?"],
+        "hi": ["तुम्हें किसने बनाया?", "तुम्हारा डेवलपर कौन है?", "तुम कहाँ से आए हो?"],
+        "bn": ["তোমাকে কে বানিয়েছে?", "তোমার নির্মাতা কে?"],
+        "mr": ["तुला कोणी बनवले?", "तुझा निर्माता कोण?"],
+        "ta": ["உங்களை யார் உருவாக்கினார்?"],
+        "te": ["మిమ్మల్ని ఎవరు తయారు చేశారు?"],
+        "kn": ["ನಿಮ್ಮನ್ನು ಯಾರು ಮಾಡಿದರು?"]
+      }
+    },
+    {
+      "intent": "fallback",
+      "description": "Unknown or out of scope query",
+      "responses": {
+        "en": ["I'm not sure I understand that. Could you please rephrase? I can help with general knowledge, translations, jokes, math, and conversations in Indian languages!"],
+        "hi": ["मुझे समझ नहीं आया। क्या आप दोबारा बता सकते हैं? मैं सामान्य ज्ञान, अनुवाद, चुटकुले, गणित और भारतीय भाषाओं में बातचीत में मदद कर सकता हूँ!"],
+        "bn": ["আমি বুঝতে পারিনি। অনুগ্রহ করে আবার বলুন?"],
+        "mr": ["मला समजले नाही. कृपया पुन्हा सांगा?"],
+        "ta": ["புரியவில்லை. தயவுசெய்து மீண்டும் சொல்லுங்கள்?"],
+        "te": ["నాకు అర్థం కాలేదు. దయచేసి మళ్ళీ చెప్పండి?"],
+        "kn": ["ನನಗೆ ಅರ್ಥವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಹೇಳಿ?"]
+      },
+      "examples": {
+        "en": [],
+        "hi": []
+      }
+    }
+  ]
+}

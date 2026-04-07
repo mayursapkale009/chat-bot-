@@ -1,0 +1,26 @@
+# Multilingual Indian Language Chatbot - Dependencies
+# Core
+fastapi==0.115.0
+uvicorn==0.30.0
+pydantic>=2.0
+
+# LLM Engine
+ollama>=0.4.0
+
+# Translation
+deep-translator>=1.11.0
+
+# Language Detection
+fasttext-wheel>=0.9.2
+
+# Voice
+SpeechRecognition>=3.10.0
+gTTS>=2.5.0
+pyttsx3>=2.90
+
+# Template & Multipart
+jinja2>=3.1.0
+python-multipart>=0.0.6
+
+# HTTP Client
+requests>=2.28.0

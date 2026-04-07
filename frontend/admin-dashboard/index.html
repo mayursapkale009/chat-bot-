@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard — Multilingual Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --accent: #06b6d4;
+            --bg: #0f0f23;
+            --bg-card: #1a1a2e;
+            --bg-input: #1e1e3a;
+            --text: #e2e8f0;
+            --text-sec: #94a3b8;
+            --text-muted: #64748b;
+            --border: #2d2d5e;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        /* NAV */
+        .navbar {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar h1 {
+            font-size: 18px;
+            background: linear-gradient(135deg, #e2e8f0, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links { display: flex; gap: 8px; }
+        .nav-links a {
+            color: var(--text-sec);
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--primary);
+        }
+
+        /* MAIN */
+        .main { padding: 24px; max-width: 1200px; margin: 0 auto; }
+
+        /* STATS */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+        }
+        .stat-card .label { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+        .stat-card .value { font-size: 28px; font-weight: 700; }
+        .stat-card .icon { font-size: 18px; float: right; }
+        .stat-card.primary .value { color: var(--primary); }
+        .stat-card.success .value { color: var(--success); }
+        .stat-card.accent .value { color: var(--accent); }
+        .stat-card.warning .value { color: var(--warning); }
+
+        /* PANELS */
+        .panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .panel-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .panel-header h2 { font-size: 15px; font-weight: 600; }
+        .panel-body { padding: 16px 20px; }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+        th {
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        tr:hover { background: rgba(99, 102, 241, 0.05); }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .badge-primary { background: rgba(99, 102, 241, 0.15); color: var(--primary); }
+        .badge-success { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+        .badge-accent { background: rgba(6, 182, 212, 0.15); color: var(--accent); }
+
+        /* BUTTONS */
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover { background: var(--primary-dark); }
+        .btn-sm { padding: 4px 10px; font-size: 11px; }
+        .btn-danger { background: rgba(239, 68, 68, 0.15); color: var(--error); border: 1px solid rgba(239, 68, 68, 0.2); }
+        .btn-danger:hover { background: rgba(239, 68, 68, 0.25); }
+
+        /* HEALTH */
+        .health-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+        .health-item {
+            padding: 12px;
+            background: var(--bg-input);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .health-dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+        }
+        .health-dot.green { background: var(--success); }
+        .health-dot.red { background: var(--error); }
+        .health-dot.yellow { background: var(--warning); }
+
+        /* LOADING */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+
+        /* TABS */
+        .tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+        .tab {
+            padding: 8px 16px;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-sec);
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .tab.active, .tab:hover {
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>🤖 Admin Dashboard</h1>
+        <div class="nav-links">
+            <a href="/" target="_blank">💬 Chat Widget</a>
+            <a href="/docs" target="_blank">📄 API Docs</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- STATS -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card primary">
+                <span class="icon">💬</span>
+                <div class="label">Total Sessions</div>
+                <div class="value" id="statSessions">-</div>
+            </div>
+            <div class="stat-card success">
+                <span class="icon">📨</span>
+                <div class="label">Total Messages</div>
+                <div class="value" id="statMessages">-</div>
+            </div>
+            <div class="stat-card accent">
+                <span class="icon">📚</span>
+                <div class="label">KB Intents</div>
+                <div class="value" id="statIntents">-</div>
+            </div>
+            <div class="stat-card warning">
+                <span class="icon">🌐</span>
+                <div class="label">Languages</div>
+                <div class="value">7</div>
+            </div>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('kb')">📚 Knowledge Base</button>
+            <button class="tab" onclick="showTab('sessions')">💬 Active Sessions</button>
+            <button class="tab" onclick="showTab('health')">❤️ System Health</button>
+        </div>
+
+        <!-- KNOWLEDGE BASE PANEL -->
+        <div class="panel" id="tab-kb">
+            <div class="panel-header">
+                <h2>Knowledge Base Entries</h2>
+                <button class="btn btn-primary btn-sm" onclick="refreshKB()">🔄 Refresh</button>
+            </div>
+            <div class="panel-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Intent</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Languages</th>
+                            <th>Examples</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="kbTable">
+                        <tr><td colspan="6" class="loading">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- SESSIONS PANEL -->
+        <div class="panel hidden" id="tab-sessions">
+            <div class="panel-header">
+                <h2>Active Sessions</h2>
+                <button class="btn btn-primary btn-sm" onclick="refreshSessions()">🔄 Refresh</button>
+            </div>
+            <div class="panel-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Session ID</th>
+                            <th>Language</th>
+                            <th>Turns</th>
+                            <th>Last Intent</th>
+                            <th>Started</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sessionsTable">
+                        <tr><td colspan="5" class="loading">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- HEALTH PANEL -->
+        <div class="panel hidden" id="tab-health">
+            <div class="panel-header">
+                <h2>System Health</h2>
+                <button class="btn btn-primary btn-sm" onclick="refreshHealth()">🔄 Refresh</button>
+            </div>
+            <div class="panel-body">
+                <div class="health-grid" id="healthGrid">
+                    <div class="loading">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API = window.location.origin;
+
+        // --- TABS ---
+        function showTab(name) {
+            document.querySelectorAll('.panel').forEach(p => p.classList.add('hidden'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById('tab-' + name).classList.remove('hidden');
+            event.target.classList.add('active');
+
+            if (name === 'kb') refreshKB();
+            if (name === 'sessions') refreshSessions();
+            if (name === 'health') refreshHealth();
+        }
+
+        // --- ANALYTICS ---
+        async function refreshStats() {
+            try {
+                const [analytics, kb] = await Promise.all([
+                    fetch(`${API}/admin/analytics`).then(r => r.json()),
+                    fetch(`${API}/admin/knowledge-base`).then(r => r.json())
+                ]);
+                document.getElementById('statSessions').textContent = analytics.total_sessions;
+                document.getElementById('statMessages').textContent = analytics.total_messages;
+                document.getElementById('statIntents').textContent = kb.total;
+            } catch (e) {
+                console.error('Stats error:', e);
+            }
+        }
+
+        // --- KNOWLEDGE BASE ---
+        async function refreshKB() {
+            try {
+                const data = await fetch(`${API}/admin/knowledge-base`).then(r => r.json());
+                const tbody = document.getElementById('kbTable');
+                tbody.innerHTML = data.entries.map(e => `
+                    <tr>
+                        <td><strong>${e.intent}</strong></td>
+                        <td style="color: var(--text-sec); max-width: 200px; overflow: hidden; text-overflow: ellipsis;">${e.description || '-'}</td>
+                        <td><span class="badge ${e.dynamic ? 'badge-accent' : 'badge-success'}">${e.dynamic ? 'Dynamic' : 'Static'}</span></td>
+                        <td>${e.languages.map(l => `<span class="badge badge-primary">${l}</span>`).join(' ')}</td>
+                        <td>${e.example_count}</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm" onclick="deleteIntent('${e.intent}')">Delete</button>
+                        </td>
+                    </tr>
+                `).join('');
+            } catch (e) {
+                document.getElementById('kbTable').innerHTML = '<tr><td colspan="6">Error loading data</td></tr>';
+            }
+        }
+
+        async function deleteIntent(name) {
+            if (!confirm(`Delete intent "${name}"?`)) return;
+            try {
+                await fetch(`${API}/admin/knowledge-base/${name}`, { method: 'DELETE' });
+                refreshKB();
+                refreshStats();
+            } catch (e) {
+                alert('Delete failed: ' + e.message);
+            }
+        }
+
+        // --- SESSIONS ---
+        async function refreshSessions() {
+            try {
+                const data = await fetch(`${API}/admin/sessions`).then(r => r.json());
+                const tbody = document.getElementById('sessionsTable');
+                const sessions = Object.entries(data.sessions);
+                if (sessions.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="5" style="color: var(--text-muted);">No active sessions</td></tr>';
+                    return;
+                }
+                tbody.innerHTML = sessions.map(([id, s]) => `
+                    <tr>
+                        <td style="font-family: monospace; font-size: 11px;">${id.substring(0, 12)}...</td>
+                        <td><span class="badge badge-primary">${s.language || '-'}</span></td>
+                        <td>${s.turns || 0}</td>
+                        <td><span class="badge badge-accent">${s.last_intent || '-'}</span></td>
+                        <td style="color: var(--text-muted);">${s.created_at ? new Date(s.created_at).toLocaleTimeString() : '-'}</td>
+                    </tr>
+                `).join('');
+            } catch (e) {
+                document.getElementById('sessionsTable').innerHTML = '<tr><td colspan="5">Error loading sessions</td></tr>';
+            }
+        }
+
+        // --- HEALTH ---
+        async function refreshHealth() {
+            try {
+                const data = await fetch(`${API}/health`).then(r => r.json());
+                const grid = document.getElementById('healthGrid');
+                grid.innerHTML = `
+                    <div class="health-item">
+                        <div class="health-dot ${data.status === 'healthy' ? 'green' : 'red'}"></div>
+                        <div>
+                            <div style="font-size: 13px; font-weight: 500;">System Status</div>
+                            <div style="font-size: 11px; color: var(--text-muted);">${data.status}</div>
+                        </div>
+                    </div>
+                    <div class="health-item">
+                        <div class="health-dot ${data.ollama_available ? 'green' : 'red'}"></div>
+                        <div>
+                            <div style="font-size: 13px; font-weight: 500;">Ollama LLM</div>
+                            <div style="font-size: 11px; color: var(--text-muted);">${data.ollama_model}</div>
+                        </div>
+                    </div>
+                    <div class="health-item">
+                        <div class="health-dot green"></div>
+                        <div>
+                            <div style="font-size: 13px; font-weight: 500;">KB Intents</div>
+                            <div style="font-size: 11px; color: var(--text-muted);">${data.kb_intents} loaded</div>
+                        </div>
+                    </div>
+                    <div class="health-item">
+                        <div class="health-dot ${data.active_sessions > 0 ? 'green' : 'yellow'}"></div>
+                        <div>
+                            <div style="font-size: 13px; font-weight: 500;">Active Sessions</div>
+                            <div style="font-size: 11px; color: var(--text-muted);">${data.active_sessions}</div>
+                        </div>
+                    </div>
+                `;
+            } catch (e) {
+                document.getElementById('healthGrid').innerHTML = '<div class="loading">Cannot connect to server</div>';
+            }
+        }
+
+        // --- INIT ---
+        refreshStats();
+        refreshKB();
+    </script>
+</body>
+</html>

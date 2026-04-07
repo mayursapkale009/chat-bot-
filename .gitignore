@@ -1,0 +1,38 @@
+# Ignore all Word documents
+*.docx
+
+# Ignore all PDF files
+*.pdf
+
+# Ignore all text files (logs, extractions, tests)
+*.txt
+# But DO NOT ignore requirements.txt (we need this!)
+!requirements.txt
+
+# Ignore all Markdown documentation
+*.md
+# If you ever create a README.md, don't ignore it
+!README.md
+
+# Ignore specific utility scripts you don't want published
+read_docx.py
+update_docx.py
+
+# Standard Python ignores (caches, virtual environments, etc.)
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+
+# Ignore large downloaded models to prevent GitHub >100MB error
+models/
+*.bin
+.venv
+env/
+venv/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
