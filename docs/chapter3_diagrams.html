@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3 — UML Diagrams</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #f4f6f8; color: #1a1a2e; padding: 40px 20px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  h1 { text-align: center; font-size: 28px; color: #0f3460; margin-bottom: 8px; }
+  .subtitle { text-align: center; color: #666; font-size: 14px; margin-bottom: 48px; }
+  .diagram-card {
+    background: #fff; border-radius: 16px; padding: 36px 32px;
+    margin-bottom: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 1px solid #e8ecf1;
+  }
+  .diagram-card h2 {
+    font-size: 20px; color: #0f3460; margin-bottom: 4px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .diagram-card h2 .badge {
+    background: #0f3460; color: #fff; font-size: 12px; padding: 3px 10px;
+    border-radius: 20px; font-weight: 600;
+  }
+  .diagram-card p { color: #555; font-size: 13px; margin-bottom: 20px; line-height: 1.5; }
+  .mermaid { display: flex; justify-content: center; overflow-x: auto; }
+  .mermaid svg { max-width: 100%; }
+  .fig-label { text-align: center; font-size: 13px; color: #888; margin-top: 16px; font-style: italic; }
+  @media print {
+    body { background: #fff; padding: 20px; }
+    .diagram-card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Chapter 3 — System Development Diagrams</h1>
+<p class="subtitle">Multilingual AI Chatbot with Voice Interaction & Context Awareness</p>
+
+<!-- ============ 1. USE CASE DIAGRAM ============ -->
+<div class="diagram-card">
+  <h2><span class="badge">Fig 3.1</span> Use Case Diagram</h2>
+  <p>Shows how the two actors (User and Admin) interact with the chatbot system. The User can send text/voice messages, change language, and view history. The Admin can manage the knowledge base, view analytics, and configure languages.</p>
+  <div class="mermaid">
+  graph LR
+    subgraph Actors
+      U["🧑 User"]
+      A["🔧 Admin"]
+    end
+
+    subgraph System["Multilingual AI Chatbot System"]
+      UC1["Send Text Message"]
+      UC2["Send Voice Message"]
+      UC3["Change Language"]
+      UC4["View Chat History"]
+      UC5["Receive Voice Response"]
+      UC6["Start / End Session"]
+      UC7["Manage Knowledge Base"]
+      UC8["View Analytics Dashboard"]
+      UC9["Configure Languages"]
+      UC10["View Conversation Logs"]
+      UC11["Language Detection"]
+      UC12["Intent Classification"]
+      UC13["ASR Processing"]
+      UC14["TTS Synthesis"]
+    end
+
+    U --> UC1
+    U --> UC2
+    U --> UC3
+    U --> UC4
+    U --> UC5
+    U --> UC6
+
+    A --> UC7
+    A --> UC8
+    A --> UC9
+    A --> UC10
+
+    UC1 -.->|includes| UC11
+    UC1 -.->|includes| UC12
+    UC2 -.->|includes| UC13
+    UC5 -.->|includes| UC14
+
+    style U fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e3a5f
+    style A fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#78350f
+    style System fill:#f0fdf4,stroke:#22c55e,stroke-width:2px
+    style UC1 fill:#fff,stroke:#3b82f6
+    style UC2 fill:#fff,stroke:#3b82f6
+    style UC3 fill:#fff,stroke:#3b82f6
+    style UC4 fill:#fff,stroke:#3b82f6
+    style UC5 fill:#fff,stroke:#3b82f6
+    style UC6 fill:#fff,stroke:#3b82f6
+    style UC7 fill:#fff,stroke:#f59e0b
+    style UC8 fill:#fff,stroke:#f59e0b
+    style UC9 fill:#fff,stroke:#f59e0b
+    style UC10 fill:#fff,stroke:#f59e0b
+    style UC11 fill:#e0f2fe,stroke:#0ea5e9
+    style UC12 fill:#e0f2fe,stroke:#0ea5e9
+    style UC13 fill:#e0f2fe,stroke:#0ea5e9
+    style UC14 fill:#e0f2fe,stroke:#0ea5e9
+  </div>
+  <p class="fig-label">Fig 3.1 — Use Case Diagram showing User and Admin interactions with the Chatbot System</p>
+</div>
+
+<!-- ============ 2. CLASS DIAGRAM ============ -->
+<div class="diagram-card">
+  <h2><span class="badge">Fig 3.2</span> Class Diagram</h2>
+  <p>Shows the main classes/services in the system, their attributes, methods, and how they relate to each other. The ChatService is the central controller that connects NLP, Voice, Knowledge Base, Context, and API Gateway modules.</p>
+  <div class="mermaid">
+  classDiagram
+    class APIGateway {
+      -String host
+      -int port
+      -JWTSecret secret
+      +handleRequest(req) Response
+      +authenticate(token) bool
+      +rateLimit(ip) bool
+    }
+
+    class ChatService {
+      -String sessionId
+      -ContextManager context
+      +processTextMessage(text, lang) Response
+      +processVoiceMessage(audio, lang) Response
+      +startSession() String
+      +endSession(sessionId) void
+    }
+
+    class NLPService {
+      -LanguageDetector langDetector
+      -IntentClassifier classifier
+      -EntityExtractor ner
+      +detectLanguage(text) String
+      +classifyIntent(text, lang) Intent
+      +extractEntities(text) Entity[]
+      +generateResponse(intent, entities, context) String
+    }
+
+    class VoiceService {
+      -WhisperModel whisper
+      -GoogleSTTClient googleSTT
+      -gTTSClient ttsClient
+      +speechToText(audio, lang) String
+      +textToSpeech(text, lang) AudioBytes
+      +detectVoiceActivity(audio) bool
+    }
+
+    class KnowledgeBase {
+      -FAQ[] faqs
+      -Template[] templates
+      +searchFAQ(query) FAQ
+      +getTemplate(intentId, lang) String
+      +addEntry(question, answer) void
+      +updateEntry(id, data) void
+    }
+
+    class ContextManager {
+      -int windowSize
+      -Map sessions
+      +getContext(sessionId) Turn[]
+      +addTurn(sessionId, role, text) void
+      +clearSession(sessionId) void
+    }
+
+    class LanguageDetector {
+      -FastTextModel model
+      +detect(text) LangResult
+      +detectScript(text) String
+    }
+
+    class IntentClassifier {
+      -MuRILModel model
+      -String[] intentLabels
+      +classify(text) IntentResult
+      +getConfidence() float
+    }
+
+    APIGateway --> ChatService : routes to
+    ChatService --> NLPService : uses
+    ChatService --> VoiceService : uses
+    ChatService --> ContextManager : manages
+    NLPService --> KnowledgeBase : queries
+    NLPService --> LanguageDetector : uses
+    NLPService --> IntentClassifier : uses
+  </div>
+  <p class="fig-label">Fig 3.2 — Class Diagram showing system services, attributes, methods, and relationships</p>
+</div>
+
+<!-- ============ 3. SEQUENCE DIAGRAM ============ -->
+<div class="diagram-card">
+  <h2><span class="badge">Fig 3.3</span> Sequence Diagram</h2>
+  <p>Shows the step-by-step message flow when a user sends a voice message and receives a spoken response. Each arrow represents a function call or data transfer between components.</p>
+  <div class="mermaid">
+  sequenceDiagram
+    actor User
+    participant UI as Web / Mobile UI
+    participant API as API Gateway
+    participant Chat as ChatService
+    participant Voice as VoiceService
+    participant NLP as NLPService
+    participant Ctx as ContextManager
+    participant KB as KnowledgeBase
+    participant DB as Database
+
+    User->>UI: Speaks into microphone
+    UI->>API: POST /chat/voice (audio + JWT)
+    API->>API: Validate JWT token
+    API->>Chat: Forward request
+
+    Chat->>Voice: speechToText(audio, lang)
+    Voice->>Voice: Noise reduction & VAD
+    Voice-->>Chat: Transcribed text
+
+    Chat->>NLP: detectLanguage(text)
+    NLP-->>Chat: Language = "hi" (Hindi)
+
+    Chat->>NLP: classifyIntent(text, "hi")
+    NLP-->>Chat: Intent = "scheme_enquiry" (0.92)
+
+    Chat->>NLP: extractEntities(text)
+    NLP-->>Chat: Entities = ["PM Kisan"]
+
+    Chat->>Ctx: getContext(sessionId)
+    Ctx-->>Chat: Last 10 turns
+
+    Chat->>NLP: generateResponse(intent, entities, context)
+    NLP->>KB: searchFAQ("PM Kisan")
+    KB-->>NLP: FAQ match found
+    NLP-->>Chat: Response text (Hindi)
+
+    Chat->>Ctx: addTurn(sessionId, "user", text)
+    Chat->>Ctx: addTurn(sessionId, "bot", response)
+    Chat->>DB: Save message log
+
+    Chat->>Voice: textToSpeech(response, "hi")
+    Voice-->>Chat: Audio (MP3 base64)
+
+    Chat-->>API: JSON response + audio
+    API-->>UI: Response + TTS audio
+    UI-->>User: Display text + Play audio
+  </div>
+  <p class="fig-label">Fig 3.3 — Sequence Diagram showing complete voice message flow from User input to spoken response</p>
+</div>
+
+<!-- ============ 4. STATE DIAGRAM ============ -->
+<div class="diagram-card">
+  <h2><span class="badge">Fig 3.4</span> State Diagram</h2>
+  <p>Shows the different states the chatbot system goes through during a conversation session — from Idle to Processing to Responding, and how it handles errors and session timeouts.</p>
+  <div class="mermaid">
+  stateDiagram-v2
+    [*] --> Idle : System Ready
+
+    Idle --> SessionStarted : User connects\n(JWT issued)
+
+    state SessionStarted {
+      [*] --> WaitingForInput
+
+      WaitingForInput --> ProcessingText : Text message received
+      WaitingForInput --> ProcessingVoice : Voice message received
+      WaitingForInput --> ChangingLanguage : Language change request
+
+      state ProcessingVoice {
+        [*] --> NoiseReduction
+        NoiseReduction --> ASRTranscription
+        ASRTranscription --> TextReady
+      }
+
+      ProcessingText --> LanguageDetection
+      TextReady --> LanguageDetection
+
+      state NLPProcessing {
+        [*] --> IntentClassification
+        IntentClassification --> EntityExtraction
+        EntityExtraction --> ContextEnrichment
+        ContextEnrichment --> [*]
+      }
+
+      LanguageDetection --> NLPProcessing
+
+      NLPProcessing --> GeneratingResponse
+
+      state GeneratingResponse {
+        [*] --> HighConfidence : confidence > 0.80
+        [*] --> MediumConfidence : 0.55 - 0.80
+        [*] --> LowConfidence : confidence < 0.55
+        HighConfidence --> TemplateResponse
+        MediumConfidence --> ClarificationPrompt
+        LowConfidence --> FAQRetrieval
+        TemplateResponse --> [*]
+        ClarificationPrompt --> [*]
+        FAQRetrieval --> [*]
+      }
+
+      GeneratingResponse --> TTSSynthesis : Generate audio
+      GeneratingResponse --> SendTextOnly : TTS disabled
+
+      TTSSynthesis --> Responding
+      SendTextOnly --> Responding
+
+      Responding --> WaitingForInput : Response delivered
+      ChangingLanguage --> WaitingForInput : Language updated
+    }
+
+    SessionStarted --> SessionExpired : 30 min inactivity
+    SessionStarted --> SessionEnded : User disconnects
+
+    SessionExpired --> Idle : Cleanup session
+    SessionEnded --> Idle : Cleanup session
+
+    state ErrorHandling {
+      [*] --> ASRFailed : Voice recognition failed
+      [*] --> NLPFailed : Intent unclear
+      [*] --> TTSFailed : Audio generation failed
+      ASRFailed --> FallbackText : Ask user to type
+      NLPFailed --> FallbackClarify : Ask to rephrase
+      TTSFailed --> FallbackTextOnly : Show text only
+    }
+  </div>
+  <p class="fig-label">Fig 3.4 — State Diagram showing chatbot system states during a conversation session</p>
+</div>
+
+</div>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#dbeafe',
+      primaryBorderColor: '#3b82f6',
+      primaryTextColor: '#1e3a5f',
+      lineColor: '#64748b',
+      secondaryColor: '#f0fdf4',
+      tertiaryColor: '#fef3c7',
+      fontFamily: 'Inter, sans-serif',
+      fontSize: '13px'
+    },
+    sequence: { mirrorActors: false, messageAlign: 'left' },
+    flowchart: { curve: 'basis', padding: 20 },
+    stateDiagram: { padding: 20 }
+  });
+</script>
+</body>
+</html>

@@ -14,7 +14,7 @@ RULES:
 1. Always respond in the SAME language the user wrote in.
 2. Be polite, helpful, and concise.
 3. If you don't know something, say so honestly.
-4. Keep responses SHORT — maximum 2-3 sentences.
+4. Provide detailed, helpful, and informative responses.
 5. For translation requests, translate accurately."""
 
 # Combined prompt: classify intent AND generate response in ONE call
@@ -85,8 +85,8 @@ class OllamaClient:
                 messages=messages,
                 options={
                     "temperature": 0.5,
-                    "num_predict": 80,      # Keep response very short
-                    "num_ctx": 512,         # Minimal context = fastest
+                    "num_predict": 1024,    # Allow for very detailed responses
+                    "num_ctx": 2048,        # Large context window to prevent cutoffs
                     "repeat_penalty": 1.1,
                     "top_k": 10,
                     "top_p": 0.7,
@@ -163,7 +163,7 @@ class OllamaClient:
         lang_name = lang_names.get(language, "English")
 
         messages = [
-            {"role": "system", "content": f"{SYSTEM_PROMPT}\nRespond in {lang_name}. Keep it SHORT (2-3 sentences max)."},
+            {"role": "system", "content": f"{SYSTEM_PROMPT}\nRespond in {lang_name}. Provide a detailed and informative answer."},
             {"role": "user", "content": message}
         ]
 
@@ -173,8 +173,8 @@ class OllamaClient:
                 messages=messages,
                 options={
                     "temperature": 0.6,
-                    "num_predict": 100,
-                    "num_ctx": 1024,
+                    "num_predict": 1024,
+                    "num_ctx": 2048,
                     "top_k": 20,
                 }
             )
@@ -186,6 +186,7 @@ class OllamaClient:
                         history: list = None):
         """
         Stream response tokens for real-time display.
+        Includes conversation history for multi-turn context.
         Yields chunks of text.
         """
         lang_names = {
@@ -195,9 +196,18 @@ class OllamaClient:
         lang_name = lang_names.get(language, "English")
 
         messages = [
-            {"role": "system", "content": f"Reply in {lang_name}. Be brief (1-2 sentences)."},
-            {"role": "user", "content": message}
+            {"role": "system", "content": f"Reply in {lang_name}. Provide a detailed and helpful response."}
         ]
+
+        # Add conversation history for multi-turn context
+        if history:
+            for turn in history[-6:]:  # Last 3 exchanges
+                messages.append({
+                    "role": turn.get("role", "user"),
+                    "content": turn.get("text", "")
+                })
+
+        messages.append({"role": "user", "content": message})
 
         try:
             stream = ollama.chat(
@@ -206,8 +216,8 @@ class OllamaClient:
                 stream=True,
                 options={
                     "temperature": 0.6,
-                    "num_predict": 80,
-                    "num_ctx": 512,
+                    "num_predict": 1024,
+                    "num_ctx": 2048,
                     "top_k": 10,
                 }
             )

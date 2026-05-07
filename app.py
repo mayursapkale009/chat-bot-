@@ -133,20 +133,38 @@ async def chat_stream(req: ChatRequest):
     # Check quick match first (instant response)
     quick = pipeline._quick_intent_match(req.message, language)
     if quick:
-        import asyncio
+        # Save quick match to session history for multi-turn memory
+        pipeline._update_session(session_id, req.message, quick["response"],
+                                 quick["intent"], language)
         async def instant_stream():
-            data = json.dumps({"token": quick["response"], "intent": quick["intent"], "done": True})
+            data = json.dumps({
+                "token": quick["response"],
+                "intent": quick["intent"],
+                "language": language,
+                "done": True
+            })
             yield f"data: {data}\n\n"
         return StreamingResponse(instant_stream(), media_type="text/event-stream")
 
-    # Stream from Ollama
+    # Get session history for multi-turn context
+    history = pipeline._get_session_history(session_id)
+
+    # Stream from Ollama with conversation history
     def generate():
         full_text = ""
-        for token in pipeline.ollama.stream_response(req.message, language):
+        for token in pipeline.ollama.stream_response(
+            req.message, language, history=history
+        ):
             full_text += token
             data = json.dumps({"token": token, "done": False})
             yield f"data: {data}\n\n"
-        yield f"data: {json.dumps({'token': '', 'done': True})}\n\n"
+
+        # After streaming completes, save the full exchange to session memory
+        pipeline._update_session(session_id, req.message, full_text,
+                                 "chat", language)
+
+        # Send final event with metadata
+        yield f"data: {json.dumps({'token': '', 'intent': 'chat', 'language': language, 'done': True})}\n\n"
 
     return StreamingResponse(generate(), media_type="text/event-stream")
 

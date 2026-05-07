@@ -7,6 +7,7 @@
     <meta name="description" content="An intelligent multilingual chatbot supporting Hindi, Bengali, Marathi, Tamil, Telugu, Kannada and English">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500&family=Noto+Sans+Tamil:wght@400;500&family=Noto+Sans+Telugu:wght@400;500&family=Noto+Sans+Kannada:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        /* ===== DARK MODE (default) ===== */
         :root {
             --primary: #6366f1;
             --primary-dark: #4f46e5;
@@ -26,6 +27,33 @@
             --user-bubble: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
             --bot-bubble: linear-gradient(135deg, #1e293b 0%, #1a1a3e 100%);
             --glow: 0 0 20px rgba(99, 102, 241, 0.15);
+        }
+
+        /* ===== LIGHT MODE ===== */
+        [data-theme="light"] {
+            --primary: #4f46e5;
+            --primary-dark: #3730a3;
+            --primary-light: #6366f1;
+            --accent: #0891b2;
+            --bg-dark: #f1f5f9;
+            --bg-card: #ffffff;
+            --bg-card-2: #f8fafc;
+            --bg-input: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --border: #e2e8f0;
+            --success: #059669;
+            --warning: #d97706;
+            --error: #dc2626;
+            --user-bubble: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            --bot-bubble: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            --glow: 0 0 20px rgba(79, 70, 229, 0.08);
+        }
+
+        /* Smooth transition when switching themes */
+        *, *::before, *::after {
+            transition: background-color 0.25s ease, color 0.15s ease, border-color 0.2s ease;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -462,7 +490,8 @@
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 600px) {
-            .header { padding: 10px 14px; }
+            .header { padding: 10px 14px; flex-direction: column; align-items: flex-start; gap: 10px; }
+            .header-right { width: 100%; justify-content: space-between; }
             .header-info h1 { font-size: 14px; }
             .chat-container { padding: 12px; }
             .message { max-width: 92%; }
@@ -496,6 +525,7 @@
                 <option value="kn">🇮🇳 ಕನ್ನಡ</option>
                 <option value="en">🇬🇧 English</option>
             </select>
+            <button class="btn-icon" id="themeBtn" title="Toggle Light/Dark Mode" onclick="toggleTheme()" style="font-size:16px;">☀️</button>
             <button class="btn-icon" id="clearBtn" title="Clear Chat">🗑️</button>
         </div>
     </div>
@@ -539,10 +569,42 @@
             <textarea id="messageInput" rows="1" placeholder="Type in any Indian language... किसी भी भाषा में लिखें..." autocomplete="off"></textarea>
         </div>
         <button class="voice-btn" id="voiceBtn" title="Voice Input">🎤</button>
-        <button class="send-btn" id="sendBtn" title="Send Message">➤</button>
+        <button class="send-btn" id="sendBtn" title="Send Message">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
     </div>
 
     <script>
+        // ============================================================
+        // THEME TOGGLE (light / dark)
+        // ============================================================
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn  = document.getElementById('themeBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                btn.textContent = '☀️';
+                localStorage.setItem('chatbot-theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙';
+                localStorage.setItem('chatbot-theme', 'light');
+            }
+        }
+
+        // Restore saved theme on load
+        (function() {
+            const saved = localStorage.getItem('chatbot-theme');
+            if (saved === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                // btn not yet in DOM at this point — set after DOM ready
+                document.addEventListener('DOMContentLoaded', () => {
+                    const btn = document.getElementById('themeBtn');
+                    if (btn) btn.textContent = '🌙';
+                });
+            }
+        })();
+
         // ============================================================
         // STATE
         // ============================================================
@@ -612,6 +674,7 @@
                 const decoder = new TextDecoder();
                 let fullText = '';
                 let lastIntent = '';
+                let lastLang = '';
 
                 while (true) {
                     const { done, value } = await reader.read();
@@ -630,6 +693,7 @@
                                     chatContainer.scrollTop = chatContainer.scrollHeight;
                                 }
                                 if (data.intent) lastIntent = data.intent;
+                                if (data.language) lastLang = data.language;
                             } catch (e) {}
                         }
                     }
@@ -648,10 +712,15 @@
                     bubbleEl.textContent = fullText;
                 }
 
-                // Update meta info
+                // Update meta info with TTS button
                 const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
                 const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-                metaEl.innerHTML = `<span>${time}</span><span class="intent-tag">${lastIntent || 'chat'}</span><span style="color: var(--text-muted); font-size: 9px;">${elapsed}s</span>`;
+                const langNames = { hi: 'Hindi', bn: 'Bengali', mr: 'Marathi', ta: 'Tamil', te: 'Telugu', kn: 'Kannada', en: 'English' };
+                const detectedLang = lastLang || 'en';
+                const langLabel = langNames[detectedLang] || detectedLang;
+                metaEl.innerHTML = `<span>${time}</span><span class="intent-tag">${lastIntent || 'chat'}</span><span class="lang-tag">${langLabel}</span><button class="tts-btn" data-lang="${detectedLang}" onclick="speakText(this)" title="Listen">🔊</button><span style="color: var(--text-muted); font-size: 9px;">${elapsed}s</span>`;
+                // Store the full text on the button's data attribute safely
+                metaEl.querySelector('.tts-btn').dataset.text = fullText;
 
             } catch (error) {
                 bubbleEl.textContent = '⚠️ Connection error. Please make sure the server is running.';
@@ -703,7 +772,7 @@
                 metaHtml += `<span class="lang-tag">${langNames[meta.language] || meta.language}</span>`;
             }
             if (sender === 'bot' && meta.language) {
-                metaHtml += `<button class="tts-btn" onclick="speakText(\`${text.replace(/`/g, "'")}\`, '${meta.language}')" title="Listen">🔊</button>`;
+                metaHtml += `<button class="tts-btn" data-lang="${meta.language}" onclick="speakText(this)" title="Listen">🔊</button>`;
             }
 
             msgDiv.innerHTML = `
@@ -713,6 +782,10 @@
                     <div class="msg-meta">${metaHtml}</div>
                 </div>
             `;
+
+            // Safely set TTS text via DOM (avoids escaping issues with Indic scripts)
+            const ttsBtn = msgDiv.querySelector('.tts-btn');
+            if (ttsBtn) ttsBtn.dataset.text = text;
 
             chatContainer.appendChild(msgDiv);
             chatContainer.scrollTop = chatContainer.scrollHeight;
@@ -745,25 +818,33 @@
         // ============================================================
         // TEXT-TO-SPEECH (TTS)
         // ============================================================
-        async function speakText(text, language) {
-            try {
-                const res = await fetch(`${API_BASE}/voice/synthesize`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ text, language })
-                });
-                if (res.ok) {
-                    const blob = await res.blob();
-                    const url = URL.createObjectURL(blob);
-                    const audio = new Audio(url);
-                    audio.play();
-                }
-            } catch (e) {
-                // Fallback to browser TTS
-                const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = language === 'hi' ? 'hi-IN' : language === 'bn' ? 'bn-IN' : language === 'ta' ? 'ta-IN' : language === 'te' ? 'te-IN' : language === 'kn' ? 'kn-IN' : language === 'mr' ? 'mr-IN' : 'en-US';
-                speechSynthesis.speak(utterance);
-            }
+        async function speakText(btn) {
+            const text = btn.dataset.text;
+            const language = btn.dataset.lang || 'en';
+
+            if (!text) { console.warn('TTS: No text found'); return; }
+
+            // Map language codes to BCP-47 locale codes
+            const langMap = {
+                'hi': 'hi-IN', 'bn': 'bn-IN', 'mr': 'mr-IN',
+                'ta': 'ta-IN', 'te': 'te-IN', 'kn': 'kn-IN', 'en': 'en-US'
+            };
+            const locale = langMap[language] || 'en-US';
+
+            // Stop any currently playing speech
+            speechSynthesis.cancel();
+
+            // Visual: show playing state
+            btn.textContent = '⏹️';
+
+            // Use browser-native TTS (instant, no network delay)
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = locale;
+            utterance.rate = 0.9;
+            utterance.pitch = 1.0;
+            utterance.onend = () => { btn.textContent = '🔊'; };
+            utterance.onerror = () => { btn.textContent = '🔊'; };
+            speechSynthesis.speak(utterance);
         }
 
         // ============================================================
@@ -780,8 +861,8 @@
             }
 
             recognition = new SpeechRecognition();
-            recognition.continuous = false;
-            recognition.interimResults = true;
+            recognition.continuous = true;       // Keep listening until user stops
+            recognition.interimResults = true;    // Show text as user speaks
 
             const langSelect = document.getElementById('langSelect');
             const langMap = {
@@ -794,27 +875,33 @@
                 isRecording = true;
                 voiceBtn.classList.add('recording');
                 voiceBtn.innerHTML = '⏹️';
-                statusText.textContent = '🎤 Listening...';
+                statusText.textContent = '🎤 Listening... (click ⏹️ to stop)';
             };
 
             recognition.onresult = (event) => {
-                let transcript = '';
-                for (let i = event.resultIndex; i < event.results.length; i++) {
-                    transcript += event.results[i][0].transcript;
+                let finalTranscript = '';
+                let interimTranscript = '';
+                for (let i = 0; i < event.results.length; i++) {
+                    if (event.results[i].isFinal) {
+                        finalTranscript += event.results[i][0].transcript + ' ';
+                    } else {
+                        interimTranscript += event.results[i][0].transcript;
+                    }
                 }
-                messageInput.value = transcript;
+                // Show final + interim text in input (user can see what's being heard)
+                messageInput.value = (finalTranscript + interimTranscript).trim();
             };
 
             recognition.onend = () => {
                 isRecording = false;
                 voiceBtn.classList.remove('recording');
                 voiceBtn.innerHTML = '🎤';
-                statusText.textContent = 'Online • Powered by Ollama';
-
-                // Auto-send if we got text
+                // DON'T auto-send! Let user review and press Send manually
                 if (messageInput.value.trim()) {
-                    sendMessage(messageInput.value.trim());
-                    messageInput.value = '';
+                    statusText.textContent = '✅ Speech captured — press Send ➤';
+                    messageInput.focus();
+                } else {
+                    statusText.textContent = 'Online • Powered by Ollama';
                 }
             };
 
@@ -851,7 +938,12 @@
         messageInput.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
-                sendBtn.click();
+                const text = messageInput.value.trim();
+                if (text && !isProcessing) {
+                    sendMessage(text);
+                    messageInput.value = '';
+                    messageInput.style.height = 'auto';
+                }
             }
         });
 
