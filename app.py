@@ -20,18 +20,45 @@ from fastapi.responses import HTMLResponse, FileResponse, StreamingResponse
 from pydantic import BaseModel, Field
 from typing import Optional
 import json
+import sqlite3
+from services.nlp_service.semantic_cache import SemanticCache
 
 # --- Global pipeline instance ---
 pipeline = None
+semantic_cache = None
+
+# Ensure data directory exists
+os.makedirs("data", exist_ok=True)
+db_path = "data/feedback.db"
+
+def init_db():
+    """Initialize SQLite database for continuous learning (RLHF)."""
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS user_feedback (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            session_id TEXT,
+            user_message TEXT,
+            bot_response TEXT,
+            feedback_type INTEGER,
+            timestamp TEXT
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+init_db()
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Initialize NLP pipeline on startup."""
-    global pipeline
+    global pipeline, semantic_cache
     print("🚀 Starting Multilingual Chatbot Server...")
     from services.nlp_service.pipeline.main_pipeline import NLPPipeline
     pipeline = NLPPipeline(model_name="llama3.2:3b")
+    semantic_cache = SemanticCache(ollama_model="llama3.2:3b", similarity_threshold=0.5)
     print("✅ Server ready!")
     yield
     print("👋 Shutting down server...")
@@ -93,6 +120,12 @@ class TTSRequest(BaseModel):
     text: str = Field(..., min_length=1)
     language: str = Field("hi", description="Language code")
 
+class FeedbackRequest(BaseModel):
+    session_id: str
+    user_message: str
+    bot_response: str
+    feedback_type: int  # 1 for up, -1 for down
+
 
 # ============================================================
 # CHAT ENDPOINTS
@@ -130,6 +163,22 @@ async def chat_stream(req: ChatRequest):
     session_id = req.session_id or str(uuid.uuid4())
     language, _ = pipeline.detect_language(req.message)
 
+    # Check Semantic Cache First
+    if semantic_cache:
+        cached_response = semantic_cache.get(req.message)
+        if cached_response:
+            pipeline._update_session(session_id, req.message, cached_response["response"],
+                                     cached_response["intent"], language)
+            async def instant_stream():
+                data = json.dumps({
+                    "token": cached_response["response"],
+                    "intent": cached_response["intent"],
+                    "language": language,
+                    "done": True
+                })
+                yield f"data: {data}\n\n"
+            return StreamingResponse(instant_stream(), media_type="text/event-stream")
+
     # Check quick match first (instant response)
     quick = pipeline._quick_intent_match(req.message, language)
     if quick:
@@ -152,16 +201,32 @@ async def chat_stream(req: ChatRequest):
     # Stream from Ollama with conversation history
     def generate():
         full_text = ""
+        
+        # Inject RAG Context if available
+        message_to_send = req.message
+        if hasattr(pipeline, "rag") and pipeline.rag and pipeline.rag.has_document(session_id):
+            context = pipeline.rag.search(req.message, session_id)
+            if context:
+                message_to_send = f"Answer the User Question based ONLY on the following Document Context. If the answer is not in the context, say 'I don't know based on the document'.\n\nDocument Context:\n{context}\n\nUser Question:\n{req.message}"
+
         for token in pipeline.ollama.stream_response(
-            req.message, language, history=history
+            message_to_send, language, history=history
         ):
             full_text += token
             data = json.dumps({"token": token, "done": False})
             yield f"data: {data}\n\n"
 
         # After streaming completes, save the full exchange to session memory
+        # Note: We save the original req.message to history, not the massive context chunk!
         pipeline._update_session(session_id, req.message, full_text,
                                  "chat", language)
+
+        # Cache the response for future identical/similar queries
+        if semantic_cache:
+            semantic_cache.set(req.message, {
+                "response": full_text,
+                "intent": "chat"
+            })
 
         # Send final event with metadata
         yield f"data: {json.dumps({'token': '', 'intent': 'chat', 'language': language, 'done': True})}\n\n"
@@ -182,6 +247,45 @@ async def end_session(session_id: str):
     if pipeline:
         pipeline.clear_session(session_id)
     return {"status": "session_ended", "session_id": session_id}
+
+
+@app.post("/upload-document")
+async def upload_document(session_id: str, file: UploadFile = File(...)):
+    """Upload a PDF document for RAG context."""
+    if not pipeline or not hasattr(pipeline, "rag") or not pipeline.rag:
+        raise HTTPException(status_code=503, detail="RAG Service not available. Check dependencies.")
+        
+    import shutil
+    os.makedirs("data/uploads", exist_ok=True)
+    file_path = f"data/uploads/{session_id}_{file.filename}"
+    
+    try:
+        with open(file_path, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+            
+        success = pipeline.rag.process_document(file_path, session_id)
+        if not success:
+            raise HTTPException(status_code=500, detail="Failed to process document")
+            
+        return {"status": "success", "message": f"Document {file.filename} processed and indexed."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/chat/feedback")
+async def submit_feedback(req: FeedbackRequest):
+    """Save user feedback for Continuous Learning (RLHF)."""
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        cursor.execute(
+            "INSERT INTO user_feedback (session_id, user_message, bot_response, feedback_type, timestamp) VALUES (?, ?, ?, ?, ?)",
+            (req.session_id, req.user_message, req.bot_response, req.feedback_type, datetime.now().isoformat())
+        )
+        conn.commit()
+        conn.close()
+        return {"status": "success", "message": "Feedback recorded"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 # ============================================================

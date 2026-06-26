@@ -250,6 +250,33 @@ class OllamaClient:
         except Exception as e:
             return f"Translation error: {e}"
 
+    def summarize_context(self, history: list) -> str:
+        """Summarize conversation history into a concise context string."""
+        if not history:
+            return ""
+        
+        text_to_summarize = ""
+        for turn in history:
+            role = turn.get("role", "unknown")
+            text = turn.get("text", "")
+            text_to_summarize += f"{role.capitalize()}: {text}\n"
+            
+        messages = [
+            {"role": "system", "content": "You are a highly efficient memory summarizer. Summarize the following conversation in 2-3 concise sentences. Focus on the main topics discussed and any important facts the user shared. Do not include pleasantries."},
+            {"role": "user", "content": text_to_summarize}
+        ]
+        
+        try:
+            response = ollama.chat(
+                model=self.model,
+                messages=messages,
+                options={"temperature": 0.3, "num_predict": 150, "num_ctx": 2048}
+            )
+            return response["message"]["content"].strip()
+        except Exception as e:
+            print(f"Summarization error: {e}")
+            return "Previous conversation context retained."
+
     def health_check(self) -> bool:
         """Check if Ollama is running."""
         try:
